@@ -141,17 +141,33 @@ footer{
     width: 100vw;
     text-align: center;
     margin: auto;
+    position: absolute;
+    bottom: 0;
     border-top: 3px solid #f9cd48;
+}
+
+
+#footer_one{
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
     position: absolute;
     bottom: 0;
     opacity: 0;
+    transform: translateX(0);
 }
 
-footer p{
+#footer_one p{
     color: white;
     font-weight: 300;
     font-size: 1rem;
-    margin: 5px auto;
+    margin: auto;
     width: 70%;
 }
 
@@ -165,17 +181,17 @@ footer p{
     width: 100vw;
     text-align: center;
     margin: auto;
-    border-top: 3px solid #f9cd48;
     position: absolute;
     bottom: 0;
     opacity: 1;
+    transform: translateX(0);
 }
 
 #footer_two p{
     color: white;
     font-weight: 300;
     font-size: 1rem;
-    margin: 5px auto;
+    margin: auto;
     width: 90%;
   }
 
