@@ -1,0 +1,327 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <style>
+        body {
+            background-color: #100e17;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+          }
+        
+        nav{
+            background-color: #100e17;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+          
+          .container {
+            position: relative;
+            margin-top: 20px;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          }
+          
+          .card {
+            display: flex;
+            height: 280px;
+            width: 200px;
+            background-color: #17141d;
+            border-radius: 10px;
+            box-shadow: -1rem 0 3rem #000;
+            transition: 0.4s ease-out;
+            position: relative;
+            left: 0px;
+            cursor: pointer;
+          }
+          
+          .card:not(:first-child) {
+              margin-left: -50px;
+          }
+          
+          .card:hover {
+            transform: translateY(-20px);
+            transition: 0.4s ease-out;
+          }
+          
+          .card:hover ~ .card {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+          }
+          
+          .title {
+            color: white;
+            font-weight: 300;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+          }
+          
+          .bar {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            height: 5px;
+            width: 150px;
+          }
+          
+          .emptybar {
+            background-color: #2e3033;
+            width: 100%;
+            height: 100%;
+          }
+          
+          .filledbar {
+            position: absolute;
+            top: 0px;
+            z-index: 3;
+            width: 0px;
+            height: 100%;
+            background: rgb(0,154,217);
+            background: linear-gradient(90deg, rgb(167, 114, 0) 0%, rgb(201, 137, 0) 65%, rgba(255,186,0,1) 100%);
+            transition: 0.6s ease-out;
+          }
+          
+          .card:hover .filledbar {
+            width: 120px;
+            transition: 0.4s ease-out;
+          }
+          
+          .content {
+            margin-top: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .content p {
+            color: white;
+            font-weight: 300;
+            font-size: 0.5rem;
+            margin: auto;
+            width: 60%;
+          }
+
+          .content h1 {
+            color: white;
+            font-weight: 300;
+            font-size: 0.7rem;
+            margin: auto;
+            width: 60%;
+          }	
+          
+          .stroke {
+            stroke: white;
+            stroke-dasharray: 360;
+            stroke-dashoffset: 360;
+            transition: 0.6s ease-out;
+          }
+          
+          svg {
+            fill: #17141d;
+            stroke-width: 2px;
+          }
+          
+          .card:hover .stroke {
+            stroke-dashoffset: 100;
+            transition: 0.6s ease-out;
+          }
+
+          #content{
+            transition: 0.4s;
+            
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 100vw;
+            text-align: center;
+            margin: auto;
+            border-top: 3px solid #f9cd48;
+          }
+
+          #content p{
+            color: white;
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 5px auto;
+            width: 90%;
+          }
+
+          #content ul{
+            display: flex;
+            flex-direction: row;
+            color: rgb(255, 255, 255);
+            justify-content: center;
+            margin: 0;
+          }
+
+          #content ul li{
+            color: rgb(255, 255, 255);
+            list-style: none;
+          }
+          #content ul li{
+            color: rgb(255, 255, 255);
+          }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="container">
+            <div class="card">
+                <h3 class="title">Coletivo</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria Detran:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">Escolar</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria Detran:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">MOPP</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria Detran:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">Indivisível</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria Detran:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">Emergencia</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria Detran:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">RT</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria ANTT:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">TAC</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Categoria ANTT:
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officiis quos eius in, accusantium unde illum, voluptatem rem iste minima tempora mollitia, numquam sit aspernatur consequuntur architecto ratione nobis molestiae!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <button data-tf-popup="oGLUaRjR" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Clique para assinar os cursos</button><script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
+        <br>
+        <div>
+            <button id="button" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;" onclick="showSobre()">Sobre</button>
+        </div>
+        <br>
+        <div id="content">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error natus vitae minus distinctio exercitationem repellendus porro impedit. Eum, officia! Pariatur, ipsam harum! In aliquam doloribus error voluptatem sunt sit deserunt.
+            </p>
+            <ul>
+                <li><a href="#" target="_blank" title="facebook">a<i class="icon icon-facebook"></i></a></li>
+                <li><a href="#" target="_blank" title="instagram">a<i class="icon icon-instagram"></i></a></li>
+                <li><a href="#" target="_blank" title="youtube">a<i class="icon icon-youtube"></i></a></li>
+                <li><a href="#" target="_blank" title="youtube">a<i class="icon icon-whatsapp"></i></a></li>
+                <li><a href="#" target="_blank" title="linkdin">a<i class="icon icon-linkedin"></i></a></li>
+                             
+            </ul>
+            <script>
+                var button = document.getElementById('button');
+                var sobre = document.getElementById('content');
+
+                function showSobre(){
+
+                    sobre.style.transition = "all 0.5s";
+
+                    if(sobre.style.display == 'none') {
+                        sobre.style.display = 'flex';
+                    } else {
+                        sobre.style.display = 'none';
+                    }
+                }
+
+
+            </script>
+        </div>
+    </nav>
+  </body>
