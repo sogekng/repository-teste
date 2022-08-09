@@ -9,7 +9,7 @@ nav{
   background-color: #100e17;
   height: 170vh;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   display: flex;
   text-align: center;
   justify-content: initial;
@@ -228,19 +228,24 @@ footer p{
 #form div input{
   width: 100%;
   height: 30px;
-  color: black;
+  color: white;
   font-size: 1rem;
   padding: 5px;
+  background-color: white;
 }
 
 #form div input:focus{
+    color: white;
     outline: none;
     border: none;
     text-decoration: none;
+    background-color: white;
 }
 
 #form div input:hover{
+  color: white;
   border: none;
+  background-color: white;
 }
 
 .content-form2{
