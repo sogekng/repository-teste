@@ -1,30 +1,11 @@
-function showFooterOne(){
-    var footer_one = document.getElementById('footer_one');
-    var footer_two = document.getElementById('footer_two');
+function sobre(num){
 
-    footer_one.style.transitionDelay = "all 0.5s";
-    footer_two.style.transitionDelay = "all 0.5s";
-
-    if(footer_one.style.opacity == "0" || footer_one.style.opacity == ""){
-        footer_two.style.transform = "translateX(0)";
-        footer_two.style.opacity = "0";
-        footer_one.style.transform = "translateX(0px)";
-        footer_one.style.opacity = "1";
-    }
-    
-}
-
-function showFooterTwo(){
-    var footer_one = document.getElementById('footer_one');
-    var footer_two = document.getElementById('footer_two');
-
-    footer_one.style.transitionDelay = "all 0.5s";
-    footer_two.style.transitionDelay = "all 0.5s";
-
-    if(footer_two.style.opacity == "0" || footer_two.style.opacity == ""){
-        footer_one.style.transform = "translateX(0)";
-        footer_one.style.opacity = "0";
-        footer_two.style.transform = "translateX(0px)";
-        footer_two.style.opacity = "1";
+    console.log(num)
+    if(num == 1){
+        document.getElementById("categoria").innerHTML = "Categoria: <b>Celulares</b>";
+        window.location.href = "curso_detalhes.html";
+    }else if(num == 2){
+        window.location.href = "curso_detalhes.html";
+        categoria.innerHTML = "Curso 2";
     }
 }
