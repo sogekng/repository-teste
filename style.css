@@ -258,7 +258,7 @@ body::-webkit-scrollbar-track {
 @media (min-width: 600px) and (max-width: 1000px) {
 
   nav{
-    height: 100vh;
+    height: 75vh;
   }
   .container{
     overflow: auto;
