@@ -17,16 +17,23 @@ nav{
 }
 
 #header{
-  position: absolute;
+  position: fixed;
   height: 10vh;
   width: 100%;
-  display: block;
+  display: flex;
   justify-content: center;
   flex-direction: row;
   z-index: 3;
+  opacity: 0;
+  background-color: rgb(16 14 23);
+  transition: 0.3s ease-out;
 }
 
-.content-header{
+#header:after{
+  transition: 0.4s ease-out;
+}
+
+#content-header{
   width: 100%;
   height: 100%;
   display: flex;
@@ -34,7 +41,6 @@ nav{
   flex-direction: column;
   align-items: center;
   overflow: none;
-  background-color: rgb(16 14 23);
 }
 
 #header-bottom{
