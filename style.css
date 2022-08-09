@@ -283,12 +283,16 @@ body::-webkit-scrollbar-track {
 
   #content-meio{
     margin:auto;
-    height: 35vh;
+    height: 55vh;
   }
 
   .content-form1{
-    height: 85%;
-    width: 65%;
+    height: 80%;
+    width: 80%;
+  }
+
+  #form div input {
+    height: 40px
   }
 
   footer{
