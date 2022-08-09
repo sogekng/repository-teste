@@ -228,24 +228,17 @@ footer p{
 #form div input{
   width: 100%;
   height: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   padding: 5px;
   background-color: white;
 }
 
 #form div input:focus{
-    color: white;
+    color: rgb(0, 0, 0);
     outline: none;
     border: none;
     text-decoration: none;
-    background-color: white;
-}
-
-#form div input:hover{
-  color: white;
-  border: none;
-  background-color: white;
 }
 
 .content-form2{
@@ -254,6 +247,19 @@ footer p{
   flex-direction: row;
   align-items: center;
   background-color: rgb(71, 64, 41);
+}
+
+#icone{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom: 5px;
+  right: 5px;
+}
+
+#icone img{
+  height: 100%;
+  width: 100%;
 }
 
 
