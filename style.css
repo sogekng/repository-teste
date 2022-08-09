@@ -40,7 +40,34 @@ nav{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  overflow: none;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: azure;
+  transition: 0.3s ease-out;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu ul li{
+  list-style: none;
+  margin: 0 1vw;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: azure;
 }
 
 #header-bottom{
@@ -252,7 +279,7 @@ footer p{
   background-color: rgb(249, 205, 72);
 }
 
-.content-form1{
+.content-form{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -260,6 +287,15 @@ footer p{
   background-color: rgb(16 14 23);
   height: 70%;
   width: 40%;
+  padding: 5vh;
+}
+
+.content-form h1{
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0;
+  width: 60%;
 }
 
 #form{
