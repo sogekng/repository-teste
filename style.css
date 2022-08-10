@@ -396,6 +396,7 @@ body::-webkit-scrollbar-track {
   .card{
     height: 350px;
     width: 400px;
+    margin: 0vh 2vh;
   }
 
   #content-meio{
