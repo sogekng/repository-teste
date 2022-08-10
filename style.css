@@ -47,7 +47,7 @@ nav{
   height: 200vh;
   width: 100vw;
   position: absolute;
-  display: flex;
+  display: none;
   text-align: center;
   justify-content: initial;
   flex-direction: column;

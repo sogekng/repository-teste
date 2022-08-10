@@ -1,21 +1,28 @@
-<link rel="shortcut icon" href="traffic.svg" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
-<script src="main.js"></script>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/traffic.svg" type="image/x-icon">
+    <script src="main.js"></script>
+    <title id="title">Home</title>
 </head>
 <body id="home">
 <script>
     setTimeout(function(){
         document.getElementById('load').style.transition = 'all 1s';
         document.getElementById('load').style.opacity = '0';
+        document.getElementById('nav').style.display = 'flex';
         document.getElementById('load').style.display = 'none';
-    }, 1050);
+
+    }, 2000);
 </script>
-<nav>
-    <div id="load">
-        <div class="box-load"></div>
-    </div>
+<div id="load">
+    <div class="box-load"></div>
+</div>
+<nav id="nav">
     <div id="header">
         <div id="color-header"></div>
         <div id="content-header">
@@ -58,7 +65,7 @@
     <div id="container">
         <div class="container-container">
             <div class="card">
-                <img src="https://media.giphy.com/media/S3cDnambyR8WjcKEBb/giphy.gif" alt="car">
+                <img src="imgs/coletivo.jpg" alt="car">
                 <h3 class="title">Transporte Coletivo</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
@@ -69,8 +76,8 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/yVCajDohhJFq8/giphy.gif" alt="car">
-                <h3 class="title">Transporte Escolar</h3>
+                <img src="imgs/emergencias.jpg" alt="car">
+                <h3 class="title">Transporte Emergencial</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
                     <div class="filledbar"></div>
@@ -80,8 +87,8 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/erND9NoS3ve8BDzB2R/giphy-downsized-large.gif" alt="car">
-                <h3 class="title">Tranporte MOPP</h3>
+                <img src="imgs/escolar.jpg" alt="car">
+                <h3 class="title">Tranporte Escolar</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
                     <div class="filledbar"></div>
@@ -91,7 +98,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/WVnT4axDEOp5m/giphy.gif" alt="car">
+                <img src="imgs/indivisivel.jpg" alt="car">
                 <h3 class="title">Indivisível</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
@@ -102,8 +109,8 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/Nulnhkzp40tUfIaBs2/giphy.gif" alt="car">
-                <h3 class="title">Transporte Emergêncial</h3>
+                <img src="imgs/mopp.jpg" alt="car">
+                <h3 class="title">Transporte MOPP</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
                     <div class="filledbar"></div>
@@ -113,8 +120,8 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/VIfE4DE7vY49i/giphy.gif" alt="car">
-                <h3 class="title">Responsável Técnico – RT</h3>
+                <img src="imgs/rt.jpg" alt="car">
+                <h3 class="title">Resp. Técnico – RT</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
                     <div class="filledbar"></div>
@@ -124,8 +131,8 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/DlXbiu2ZgpHlC/giphy.gif" alt="car">
-                <h3 class="title">TAC</h3>
+                <img src="imgs/tac.jpg" alt="car">
+                <h3 class="title">Transp. Autônomo de Cargas - TAC</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
                     <div class="filledbar"></div>

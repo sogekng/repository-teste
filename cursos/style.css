@@ -9,7 +9,7 @@ background-color: #100e17;
 height: 150vh;
 width: 100vw;
 position: absolute;
-display: flex;
+display: none;
 text-align: center;
 justify-content: initial;
 flex-direction: column;
@@ -210,7 +210,7 @@ align-items: center;
 height: 150vh;
 width: 100%;
 background-color: rgb(249, 205, 72);
-margin-top: 5vh;
+margin: auto;
 }
 
 .content-text{
@@ -328,6 +328,8 @@ footer{
     width: 100%;
     text-align: center;
     bottom: 0px;
+    position: absolute;
+    border-top: 3px solid #f9cd48;
 }
 
 

@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <title id="title">Saber mais</title>
+    <title id="title">Curso Transp. Escolar</title>
 </head>
 <body>
   <script>
     setTimeout(function(){
         document.getElementById('load').style.transition = 'all 1s';
         document.getElementById('load').style.opacity = '0';
-        document.getElementById('load').style.zIndex = '-1';
+        document.getElementById('nav').style.display = 'flex';
+        document.getElementById('load').style.display = 'none';
+
     }, 2000);
-  </script>
-    <nav>
-      <div id="load">
-        <div class="box-load"></div>
-      </div>
+</script>
+<div id="load">
+    <div class="box-load"></div>
+</div>
+  <nav id="nav">
       <div id="header">
         <div id="content-header">
             <div class="menu">
@@ -96,7 +98,7 @@
         </div>
         <div class="content-form">
             <h1>Transporte Escolar</h1>
-            <form action="https://api.sheetmonkey.io/form/c5f2sxgJhJcFuh2jg6aiaM" id="form" method="POST">
+            <form action="../enviar-email.php" id="form" method="POST">
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" class="form-control" id="input-nome" aria-describedby="nomeHelp" placeholder="Digite seu nome" autocomplete="off">
@@ -110,9 +112,16 @@
                     <input type="text" name="telefone" class="form-control" id="input-telefone" placeholder="Telefone" autocomplete="off">
                 </div>
                 <div class="form-group">
-                    <label for="email">2 + 2 ?</label>
-                    <input type="text" class="form-control" id="input-email" placeholder="" autocomplete="off">
-                </div>
+                  <label for="curso">Tipo de curso:</label>
+                  <select name="curso" id="cursos" value="Transporte Emergencial">
+                    <option value="Transporte Coletivo">Transporte Coletivo</option>
+                    <option value="Transporte Emergencial">Transporte Emergencial</option>
+                    <option value="Transporte Escolar">Transporte Escolar</option>
+                    <option value="Transporte Indivisivel">Transporte Indivisivel</option>
+                    <option value="Responsavel Tecnico">Responsavel Tecnico</option>
+                    <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas</option>
+                  </select>
+              </div>
                 <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:auto;text-decoration:none;" onclick="">Enviar</button>
             </form>
         </div>
@@ -133,7 +142,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
         </p>
     </footer>
-    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="/imgs/logo-whatsapp-verde-icone-ios-android-1024.png" alt="icone"></a>
+    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="../imgs/whatsapp.png" alt="icone"></a>
     </nav>
 </body>
 </html>
