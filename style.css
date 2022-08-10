@@ -396,9 +396,9 @@ body::-webkit-scrollbar-track {
     height: 55vh;
   }
 
-  .content-form1{
+  .content-form{
     height: 80%;
-    width: 80%;
+    width: 50%;
     padding: 2vh;
   }
 
