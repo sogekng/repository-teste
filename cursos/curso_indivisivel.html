@@ -9,7 +9,17 @@
     <title id="title">Saber mais</title>
 </head>
 <body>
+  <script>
+    setTimeout(function(){
+        document.getElementById('load').style.transition = 'all 1s';
+        document.getElementById('load').style.opacity = '0';
+        document.getElementById('load').style.zIndex = '-1';
+    }, 2000);
+  </script>
     <nav>
+      <div id="load">
+        <div class="box-load"></div>
+      </div>
       <div id="header">
         <div id="content-header">
             <div class="menu">
