@@ -4,69 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <style>
-        body {
-            background-color: #100e17;
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            }
-          
-          nav{
-            background-color: #100e17;
-            height: 100vh;
-            width: 100vw;
-            position: absolute;
-            display: flex;
-            text-align: center;
-            justify-content: initial;
-            flex-direction: column;
-          }
-
-          #content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-          }
-
-          #content div h1{
-            color: rgb(0, 0, 0);
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-          }
-
-          #content div{
-            background-color:#f9cd48;
-          }
-
-          #content div p{
-            color: rgb(0, 0, 0);
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-          }
-    </style>
     <title id="title">Saber mais</title>
 </head>
 <body>
     <nav>
-        <div id="content">
-            <div>
-                <h1>Curso Emergencial</h1>
-                <h2 id="categoria">a</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi cum in consequatur expedita vel exercitationem reiciendis enim repellat sunt asperiores rem natus doloribus illo odio, id eos quidem aliquam!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus perferendis hic nulla quo nesciunt similique eum ut soluta quis esse nostrum, pariatur autem eaque velit at, distinctio quisquam nemo.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id amet, nesciunt perspiciatis odio velit provident. Non quos assumenda blanditiis facilis sequi cum magnam, eveniet incidunt sit harum facere expedita iusto!
-                    lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, officia minima deserunt assumenda ratione ex mollitia ea sed aperiam? Debitis nobis id ullam non doloremque temporibus voluptas optio iure perferendis?
-
-                </p>
+      <div id="header">
+        <div id="content-header">
+            <div class="menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                    <li>
+                        <a>Cursos</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="">Detran</a>
+                                <ul class="dropdown-detran">
+                                    <li><a href="curso_coletivo.html">Transporte Coletivo</a></li>
+                                    <li><a href="curso_emergencial.html">Transporte Emergencial</a></li>
+                                    <li><a href="curso_escolar.html">Transporte Escolar</a></li>
+                                    <li><a href="curso_indivisivel.html">Transporte Indivisível</a></li>
+                                    <li><a href="curso_mopp.html">Transporte Cargas Perigosas - MOPP</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">ANTT</a>
+                                <ul class="dropdown-antt">
+                                    <li><a href="curso_rt.html">RT</a></li>
+                                    <li><a href="curso_tac.html">TAC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
+      </div>
+      <div id="content-meio">
+        <div class="content-text">
+          <h1>
+            Transporte Emergencial
+          </h1>
+          <div class="content-text-p">
+            <div class="content-text-p-01">
+              <h1>Objetivo</h1>
+              <p>
+                O curso de condutor para transporte de veículos de emergência tem como objetivo treinar e capacitar o motorista, preparando-o para conduzir o veículo com segurança, de maneira a preservar a integridade física de seus ocupantes e dos demais envolvidos no trânsito.
+              </p>
+            </div>
+            <div class="content-text-p-01">
+              <h1>Requisitos</h1>
+              <p>
+                Ser maior de 21 anos
+                Estar habilitado em uma das categorias “B”, “C”, “D” e “E”
+                Não ter cometido nenhuma infração grave ou gravíssima ou ser reincidente em infrações médias durante os últimos doze meses
+                Não estar cumprindo pena de suspensão do direito de dirigir, cassação da Carteira Nacional de Habilitação – CNH, pena decorrente de crime de trânsito, bem como não estar impedido judicialmente de exercer seus direitos
+              </p>
+            </div>
+            <div class="content-text-p-01">
+              <h1>Documentos</h1>
+              <p>
+                Cópia da CNH (CARTEIRA NACIONAL DE HABILITAÇÃO) ampliada 130% folha A4
+                01 (uma) foto 2X2 colorida
+                Certidão do prontuário da CNH solicitado no site do DETRAN/SP ou no Poupatempo (Fins de direito)
+                Certidão de distribuição criminal no site do Tribunal de Justiça de São Paulo ou no Fórum criminal de origem da CNH (em São Paulo – Fórum João Mendes ou Fórum criminal da Barra Funda)
+              </p>
+            </div>
+            <div class="content-text-p-01">
+              <h1>Dias de curso</h1>
+              <p>
+                Dez dias de segunda a sexta
+                das 18:00 às 22:35
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-form">
+            <h1>Transporte Coletivo</h1>
+            <form action="https://api.sheetmonkey.io/form/c5f2sxgJhJcFuh2jg6aiaM" id="form" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" class="form-control" id="input-nome" aria-describedby="nomeHelp" placeholder="Digite seu nome" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="input-email" placeholder="E-mail" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Whatsapp</label>
+                    <input type="text" name="telefone" class="form-control" id="input-telefone" placeholder="Telefone" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="email">2 + 2 ?</label>
+                    <input type="text" class="form-control" id="input-email" placeholder="" autocomplete="off">
+                </div>
+                <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:auto;text-decoration:none;" onclick="">Enviar</button>
+            </form>
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="container_footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p id="footer_one_p">
+                            <span>&copy; 2020 Todos os direitos reservados.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
+        </p>
+    </footer>
+    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="/imgs/logo-whatsapp-verde-icone-ios-android-1024.png" alt="icone"></a>
     </nav>
 </body>
 </html>

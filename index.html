@@ -11,10 +11,30 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <a>Cursos</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="">Detran</a>
+                                <ul class="dropdown-detran">
+                                    <li><a href="./cursos/curso_coletivo.html">Transporte Coletivo</a></li>
+                                    <li><a href="./cursos/curso_emergencial.html">Transporte Emergencial</a></li>
+                                    <li><a href="./cursos/curso_escolar.html">Transporte Escolar</a></li>
+                                    <li><a href="./cursos/curso_indivisivel.html">Transporte Indivisível</a></li>
+                                    <li><a href="./cursos/curso_mopp.html">Transporte Cargas Perigosas - MOPP</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">ANTT</a>
+                                <ul class="dropdown-antt">
+                                    <li><a href="./cursos/curso_rt.html">RT</a></li>
+                                    <li><a href="./cursos/curso_tac.html">TAC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,7 +69,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://media.giphy.com/media/TeXVQ0AFBukqA/giphy.gif" alt="car">
+                <img src="https://media.giphy.com/media/erND9NoS3ve8BDzB2R/giphy-downsized-large.gif" alt="car">
                 <h3 class="title">Tranporte MOPP</h3>
                 <div class="bar">
                     <div class="emptybar"></div>
@@ -105,28 +125,26 @@
             </div>
         </div>
     </div>
-    <div id="content-meio">
-        <div class="content-form">
-            <h1>Preencha o formulario</h1>
-            <form action="https://api.sheetmonkey.io/form/c5f2sxgJhJcFuh2jg6aiaM" id="form" method="POST">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="form-control" id="input-nome" aria-describedby="nomeHelp" placeholder="Digite seu nome" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="input-email" placeholder="E-mail" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Whatsapp</label>
-                    <input type="text" name="telefone" class="form-control" id="input-telefone" placeholder="Telefone" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="email">2 + 2 ?</label>
-                    <input type="text" class="form-control" id="input-email" placeholder="" autocomplete="off">
-                </div>
-                <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:auto;text-decoration:none;" onclick="">Enviar</button>
-            </form>
+    <div id="content">
+        <div class="content-sobre" id="sobre">
+            <div class="sobre-title">
+                <h1>Quem somos nós</h1>
+            </div>
+            <div class="sobre-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
+                </p>
+            </div>
+        </div>
+        <div class="content-contato" id="contato">
+            <div class="contato-title">
+                <h1>Tire suas duvidas</h1>
+            </div>
+            <div class="contato-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
+                </p>
+            </div>
         </div>
     </div>
     <footer id="footer">

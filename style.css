@@ -30,44 +30,109 @@ nav{
 }
 
 #header:after{
-  transition: 0.4s ease-out;
+transition: 0.4s ease-out;
 }
 
 #content-header{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
 }
 
-.menu{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: azure;
-  transition: 0.3s ease-out;
+.menu {
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 
-.menu ul{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
-
-.menu ul li{
+.menu ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  margin: 0 1vw;
 }
 
-.menu ul li a{
+.menu ul li {
+  float: left;
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  color: rgba(255, 255, 255, .9);
   text-decoration: none;
-  color: azure;
+  padding: 1rem 2rem;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus {
+  background: rgb(249, 205, 72);
+}
+
+.menu ul li:hover .dropdown{
+display: block;
+}
+
+.menu ul li:hover .dropdown li:hover .dropdown-detran{
+display: block;
+}
+
+.menu ul li:hover .dropdown li:hover .dropdown-antt{
+display: block;
+}
+
+.menu ul li a:focus {
+  color: white;
+}
+
+.menu ul li a:not(:only-child)::after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+
+.menu ul li ul li {
+  min-width: 190px;
+}
+
+.menu ul li ul li a {
+  background: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.menu ul li ul li a:hover,
+.menu ul li ul li a:focus {
+  background: rgb(249, 205, 72);
+  color: #111;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: rgb(16 14 23);
+  box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+.dropdown-detran{
+display: none;
+  position: absolute;
+  background: rgb(16 14 23);
+  box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+top: 0;
+left: 100%;
+}
+
+.dropdown-antt{
+display: none;
+  position: absolute;
+  background: rgb(16 14 23);
+  box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+top: 0;
+left: 100%;
 }
 
 #header-bottom{
@@ -228,6 +293,43 @@ svg {
 .card:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
+}
+
+
+#content{
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgb(249, 205, 72);
+  z-index: 2;
+}
+
+.content-sobre{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-contato{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10vh 0;
+}
+
+#sobre::after{
+  transition: 0.4s ease-out;
+}
+
+#contato::after{
+  transition: 0.4s ease-out;
 }
 
 footer{

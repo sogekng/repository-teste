@@ -1,0 +1,324 @@
+body {
+    background-color: #100e17;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    }
+  
+nav{
+background-color: #100e17;
+height: 150vh;
+width: 100vw;
+position: absolute;
+display: flex;
+text-align: center;
+justify-content: initial;
+flex-direction: column;
+}
+
+#header{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 3;
+    background-color: rgb(16 14 23);
+    transition: 0.3s ease-out;
+}
+
+#header:after{
+transition: 0.4s ease-out;
+}
+
+#content-header{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.menu {
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    float: left;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+
+.menu ul li a:hover,
+.menu ul li a:focus {
+    background: rgb(249, 205, 72);
+}
+
+.menu ul li:hover .dropdown{
+display: block;
+}
+
+.menu ul li:hover .dropdown li:hover .dropdown-detran{
+display: block;
+}
+
+.menu ul li:hover .dropdown li:hover .dropdown-antt{
+display: block;
+}
+
+.menu ul li a:focus {
+    color: white;
+}
+
+.menu ul li a:not(:only-child)::after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+.menu ul li ul li {
+    min-width: 190px;
+}
+
+.menu ul li ul li a {
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.menu ul li ul li a:hover,
+.menu ul li ul li a:focus {
+    background: rgb(249, 205, 72);
+    color: #111;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: rgb(16 14 23);
+    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+.dropdown-detran{
+display: none;
+    position: absolute;
+    background: rgb(16 14 23);
+    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+top: 0;
+left: 100%;
+}
+
+.dropdown-antt{
+display: none;
+    position: absolute;
+    background: rgb(16 14 23);
+    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+top: 0;
+left: 100%;
+}
+  
+
+#content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+}
+
+#content div h1{
+color: rgb(0, 0, 0);
+font-size: 2.5rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+#content div{
+background-color:#f9cd48;
+}
+
+#content div p{
+color: rgb(0, 0, 0);
+font-size: 1.5rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+
+#content-meio{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;
+height: 150vh;
+width: 100%;
+background-color: rgb(249, 205, 72);
+margin-top: 5vh;
+}
+
+.content-text{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-text h1{
+    margin: 10px;
+}
+
+.content-text-p{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding: 0 20px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.content-text-p-01{
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.content-form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background-color: rgb(16 14 23);
+height: 60%;
+width: 40%;
+padding: 5vh;
+margin: auto 0;
+}
+
+.content-form h1{
+color: white;
+font-weight: 300;
+font-size: 1.5rem;
+margin: 0;
+width: 60%;
+}
+
+#form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+
+#form div{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width: 70%;
+height: 15%;
+margin: 10px;
+}
+
+#form div label{
+width: 100%;
+border: none;
+color: white;
+}
+
+
+#form div input{
+width: 100%;
+height: 20px;
+color: rgb(0, 0, 0);
+font-size: 1rem;
+padding: 5px;
+background-color: white;
+}
+
+#form div input:focus{
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+#icone{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 5px;
+    right: 5px;
+}
+
+#icone img{
+height: 100%;
+width: 100%;
+}
+
+footer{
+    transition: all 0.4s ease 0s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+}
+
+
+footer p{
+color: white;
+font-weight: 300;
+font-size: 14px;
+margin: 0;
+width: 65%;
+}
+
+.container_footer{
+position: relative;
+width: 25%;
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+
+#showFooter{
+position: absolute;
+color: white;
+font-weight: 0.5rem;
+right: 0;
+bottom: 10%;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+background: transparent;        /* color of the tracking area */
+}
