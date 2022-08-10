@@ -95,7 +95,7 @@ nav{
   display: block;
   justify-content: center;
   flex-direction: row;
-  overflow: none;
+  overflow: auto;
   z-index: 2;
 }
 
@@ -376,7 +376,7 @@ body::-webkit-scrollbar-track {
     height: 100vh;
   }
   #container{
-    overflow: auto;
+
     height: auto;
     margin: 0;
   }
