@@ -89,7 +89,6 @@ nav{
   
 #container {
   position: relative;
-  margin-top: 20px;
   height: 45vh;
   width: 100%;
   display: block;
@@ -97,6 +96,7 @@ nav{
   flex-direction: row;
   overflow: auto;
   z-index: 2;
+  margin: 5vh;
 }
 
 .container-container{
