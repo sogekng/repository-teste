@@ -382,8 +382,7 @@ body::-webkit-scrollbar-track {
   }
 
   #container{
-
-    height: auto;
+    height: 30vh;
     margin: 0;
   }
   
