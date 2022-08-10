@@ -1,8 +1,10 @@
-import email
+import json
+import pandas as pd
 import yagmail
 
-nome = 'Paulo'
+with open('clientes.json', 'r', encoding='utf-8') as openfile: 
+        dic = json.load(openfile)
 
-emailServer = yagmail.SMTP('pguto5@gmail.com', 'euamoskate')
+tabela = pd.DataFrame(dic)
 
-emailServer.send(nome, subject = 'Feliz aniversário', contents = f'Olá {nome}! Feliz aniversário!')
+print(tabela)
