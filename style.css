@@ -375,7 +375,7 @@ body::-webkit-scrollbar-track {
   nav{
     height: 100vh;
   }
-  .container{
+  #container{
     overflow: auto;
     height: auto;
     margin: 0;
@@ -399,6 +399,7 @@ body::-webkit-scrollbar-track {
   .content-form1{
     height: 80%;
     width: 80%;
+    padding: 2vh;
   }
 
   #form div input {
