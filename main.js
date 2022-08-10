@@ -45,11 +45,11 @@ document.addEventListener('scroll', (e) => {
       ticking = false;
 
       if(lastKnownScrollPosition < 1){
-        document.getElementById('header').style.opacity = 0;
-        document.getElementById("content-header").style.display = "none";
+        document.getElementById('color-header').style.opacity = 0;
+        document.getElementById("menu").style.backgroundColor = "black";
       }else{
-        document.getElementById('header').style.opacity = 1;
-        document.getElementById("content-header").style.display = "flex";
+        document.getElementById('color-header').style.opacity = 1;
+        document.getElementById("menu").style.backgroundColor = "black";
       }
     });
 
