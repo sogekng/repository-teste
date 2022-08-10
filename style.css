@@ -375,11 +375,18 @@ body::-webkit-scrollbar-track {
   nav{
     height: 100vh;
   }
+
+  #header {
+    height: 5vh;
+    opacity: 1;
+  }
+
   #container{
 
     height: auto;
     margin: 0;
   }
+  
   .container-container{
     width: 200%;
     height: 100%;
