@@ -383,7 +383,7 @@ body::-webkit-scrollbar-track {
 
   #container{
     height: 30vh;
-    margin: 0;
+    margin: 2vh 0;
   }
   
   .container-container{
