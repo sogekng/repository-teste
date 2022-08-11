@@ -145,7 +145,7 @@ content: ' ▾';
 }
 
 .menu ul li ul li {
-min-width: 190px;
+    min-width: 100%;
 }
 
 .menu ul li ul li a {
