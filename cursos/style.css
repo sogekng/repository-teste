@@ -3,17 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     }
-  
-nav{
-background-color: #100e17;
-height: 150vh;
-width: 100vw;
-position: absolute;
-display: none;
-text-align: center;
-justify-content: initial;
-flex-direction: column;
-}
 
 #load{
 position: fixed;
@@ -82,12 +71,12 @@ align-items: center;
 }
 
 .menu {
-margin: 0 auto;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul {
@@ -145,11 +134,11 @@ content: ' ▾';
 }
 
 .menu ul li ul li {
-    min-width: 100%;
+min-width: 100%;
 }
 
 .menu ul li ul li a {
-background: rgb(0, 0, 0);
+background-color: rgb(16 14 23);
 color: rgb(255, 255, 255);
 }
 
@@ -218,10 +207,9 @@ display: flex;
 justify-content: space-around;
 flex-direction: row;
 align-items: center;
-height: 150vh;
+height: 95%;
 width: 100%;
 background-color: rgb(249, 205, 72);
-margin: auto;
 }
 
 .content-text{
@@ -397,7 +385,6 @@ footer{
     text-align: center;
     bottom: 0px;
     position: absolute;
-    border-top: 3px solid #f9cd48;
 }
 
 
@@ -438,15 +425,15 @@ background: transparent;        /* color of the tracking area */
     nav{
       height: 220vh;
     }
-  
+    
     #header {
-      height: 5vh;
-      opacity: 1;
+    height: 10vh;
+    opacity: 1;
     }
     #header-bottom {
-      position: relative;
-      height: 30vh;
-      width: 100%;
+    position: relative;
+    height: 30vh;
+    width: 100%;
     }
 
     .menu {
@@ -513,8 +500,8 @@ background: transparent;        /* color of the tracking area */
     }
     
     .menu ul li ul li {
-        min-width: 100%;
-        height: 7vh;
+    min-width: 100%;
+    height: 7vh;
     }
     
     .menu ul li ul li a {
@@ -527,31 +514,18 @@ background: transparent;        /* color of the tracking area */
     background: rgb(249, 205, 72);
     color: #111;
     }
-  
-    #container{
-      height: 50vh;
-      margin: 2vh 0;
-      display: block;
-      overflow: auto;
-    }
-    
-    .container-container{
-      width: 200%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-  
-    }
-  
-    .card{
-      height: 350px;
-      width: 400px;
-      margin: 0vh 2vh;
+
+    #icone {
+    position: fixed;
+    height: 75px;
+    width: 75px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
     }
 
-    #content {
-        flex-direction: column;
-        height: 50%;
+    footer{
+    margin-top: auto;
     }
   
     #content-meio{
@@ -583,22 +557,5 @@ background: transparent;        /* color of the tracking area */
   
     #form div input {
       height: 40px
-    }
-  
-    #icone {
-      position: fixed;
-      height: 75px;
-      width: 75px;
-      bottom: 20px;
-      right: 20px;
-      z-index: 5;
-    }
-  
-    footer{
-      margin-top: auto;
-    }
-
-    footer p {
-        width: 90%;
     }
   }

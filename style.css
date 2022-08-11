@@ -163,7 +163,7 @@ display: block;
 }
 
 .menu ul li ul li a {
-  background: rgb(0, 0, 0);
+  background-color: rgb(16 14 23);
   color: rgb(255, 255, 255);
 }
 
@@ -415,11 +415,9 @@ footer{
   justify-content: center;
   align-items: center;
   height: 12vh;
-  margin-top: 10vh;
   width: 100%;
   text-align: center;
   bottom: 0px;
-  border-top: 3px solid rgb(249, 205, 72);
 }
 
 
@@ -431,99 +429,14 @@ footer p{
   width: 70%;
 }
 
-.container_footer{
-  position: relative;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-#showFooter{
-  position: absolute;
-  color: white;
-  font-weight: 0.5rem;
-  right: 0;
-  bottom: 10%;
-}
-
 #content-meio{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  height: 100vh;
+  height: 90%;
   width: 100%;
   background-color: rgb(249, 205, 72);
-}
-
-.content-form{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(16 14 23);
-  height: 70%;
-  width: 40%;
-  padding: 5vh;
-}
-
-.content-form h1{
-  color: white;
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin: 0;
-  width: 60%;
-}
-
-#form{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-#form div{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  height: 15%;
-  margin: 10px;
-}
-
-#form div label{
-  width: 100%;
-  border: none;
-  color: white;
-}
-
-
-#form div input{
-  width: 100%;
-  height: 30px;
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  padding: 5px;
-  background-color: white;
-}
-
-#form div input:focus{
-    color: rgb(0, 0, 0);
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
-
-.content-form2{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgb(71, 64, 41);
 }
 
 #icone{
