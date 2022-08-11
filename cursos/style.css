@@ -489,7 +489,7 @@ background: transparent;        /* color of the tracking area */
     .content-text-p {
         width: 70%;
         height: 70%;
-        padding: 20px;
+        padding: 100px 20px;
     }
   
     #form div input {
@@ -507,5 +507,9 @@ background: transparent;        /* color of the tracking area */
   
     footer{
       margin: 0;
+    }
+
+    footer p {
+        width: 90%;
     }
   }

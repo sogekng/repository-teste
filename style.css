@@ -580,7 +580,7 @@ body::-webkit-scrollbar-track {
   .content-text-p {
     width: 70%;
     height: 70%;
-    padding: 20px;
+    padding: 100px 20px;
   }
 
   #form div input {
