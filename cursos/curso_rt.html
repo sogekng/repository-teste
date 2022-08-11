@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <title id="title">Curso RT</title>
-</head>
-<body>
-  <script>
-    setTimeout(function(){
-        document.getElementById('load').style.transition = 'all 1s';
-        document.getElementById('load').style.opacity = '0';
-        document.getElementById('nav').style.display = 'flex';
-        document.getElementById('load').style.display = 'none';
-
-    }, 2000);
-</script>
-<div id="load">
-    <div class="box-load"></div>
-</div>
-  <nav id="nav">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../main.js"></script>
+    <title id="title">Resp. Tecnico RT</title>
+  </head>
+  <body>
+      <script>
+        setTimeout(function(){
+            document.getElementById('load').style.transition = 'all 1s';
+            document.getElementById('load').style.opacity = '0';
+            document.getElementById('nav').style.display = 'flex';
+            document.getElementById('load').style.display = 'none';
+        
+        }, 2000);
+    </script>
+    <div id="load">
+        <div class="box-load"></div>
+    </div>
+    <nav id="nav">
       <div id="header">
         <div id="content-header">
             <div class="menu">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/index.html#sobre">Sobre</a></li>
-                    <li><a href="/index.html#contato">Contato</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#sobre">Sobre</a></li>
+                    <li><a href="../index.html#contato">Contato</a></li>
                     <li>
                         <a>Cursos</a>
                         <ul class="dropdown">
@@ -57,16 +58,20 @@
       </div>
       <div id="content-meio">
         <div class="content-text">
-          <h1>
-            Curso - Transporte Coletivo
-          </h1>
+          <div class="content-text-title">
+            <h1>Curso - Resp. Tecnico RT</h1><span class="material-symbols-outlined">task_alt</span> <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#100e17;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm()">Assinar</button>
+          </div>
           <div class="content-text-p">
             <div class="content-text-p-01">
-              <h1>Objetivo</h1>
+              <div class="content-text-p-01-title">
+                <span class="material-symbols-outlined">inventory</span><h1>Objetivo</h1>
+              </div>
               <p>Este curso tem por objetivo, capacitar os participantes a conduzir veículos rodoviários de Transporte Coletivo de Passageiros com segurança, de maneira a preservar a integridade física de seus ocupantes e dos demais envolvidos no trânsito.</p>
             </div>
             <div class="content-text-p-01">
-              <h1>Requisitos</h1>
+              <div class="content-text-p-01-title">
+                <span class="material-symbols-outlined">assignment</span><h1>Requisitos</h1>
+              </div>
               <p>
                 Ser maior de 21 anos
                 Estar habilitado em uma das categorias “D” ou “E”
@@ -78,7 +83,9 @@
               </p>
             </div>
             <div class="content-text-p-01">
-              <h1>Documentos</h1>
+              <div class="content-text-p-01-title">
+                <span class="material-symbols-outlined">description</span><h1>Documentos</h1>
+              </div>
               <p>
                 Cópia da CNH (CARTEIRA NACIONAL DE HABILITAÇÃO) ampliada 130% na folha A4.
                 01 (uma) foto 2X2 colorida
@@ -87,7 +94,9 @@
               </p>
             </div>
             <div class="content-text-p-01">
-              <h1>Dias de curso</h1>
+              <div class="content-text-p-01-title">
+                <span class="material-symbols-outlined">calendar_month</span><h1>Dias de curso</h1>
+              </div>
               <p>
                 Dez dias de segunda a sexta
                 Manhã: das 07:00 as 11:35hs
@@ -96,8 +105,11 @@
             </div>
           </div>
         </div>
-        <div class="content-form">
-            <h1>RT</h1>
+        <div id="content-form">
+          <div class="content-form-title">
+            <h1>Peencha os dados</h1>
+            <p onclick="closeForm()">X</p>
+          </div>
             <form action="../enviar-email.php" id="form" method="POST">
                 <div class="form-group">
                     <label for="nome">Nome</label>
@@ -113,13 +125,14 @@
                 </div>
                 <div class="form-group">
                   <label for="curso">Tipo de curso:</label>
-                  <select name="curso" id="cursos" value="Transporte Emergencial">
+                  <select name="curso" id="appearance-select" value="Transporte Emergencial">
                     <option value="Transporte Coletivo">Transporte Coletivo</option>
                     <option value="Transporte Emergencial">Transporte Emergencial</option>
                     <option value="Transporte Escolar">Transporte Escolar</option>
                     <option value="Transporte Indivisivel">Transporte Indivisivel</option>
-                    <option value="Responsavel Tecnico">Responsavel Tecnico</option>
-                    <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas</option>
+                    <option value="Transporte Cargas Perigosas">Transporte Cargas Perigosas - MOPP</option>
+                    <option value="Responsavel Tecnico" selected>Responsavel Tecnico - RT</option>
+                    <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas - TAC</option>
                   </select>
               </div>
                 <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:auto;text-decoration:none;" onclick="">Enviar</button>
@@ -142,7 +155,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
         </p>
     </footer>
-    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="../imgs/whatsapp.png" alt="icone"></a>
+    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="../imgs/whatsapp.png" alt="icone"></a> 
     </nav>
-</body>
-</html>
+  </body>
+  </html>

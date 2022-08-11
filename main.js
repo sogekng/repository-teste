@@ -1,30 +1,16 @@
 
 
-function sobre(num){
+function openForm(){
+  var form = document.getElementById('content-form');
 
-    console.log(num)
-    if(num == 1){
-        window.location.href = "./cursos/curso_coletivo.html";
-        console.log(num)
-    }else if(num == 2){
-        window.location.href = "./cursos/curso_escolar.html";
-        console.log(num)
-    }else if(num == 3){
-        window.location.href = "./cursos/curso_mopp.html";
-        console.log(num)
-    }else if(num == 4){
-        window.location.href = "./cursos/curso_indivisivel.html";
-        console.log(num)
-    }else if(num == 5){
-        window.location.href = "./cursos/curso_emergencial.html";
-        console.log(num)
-    }else if(num == 6){
-        window.location.href = "./cursos/curso_rt.html";
-        console.log(num)
-    }else if(num == 7){
-        window.location.href = "./cursos/curso_tac.html";
-        console.log(num)
-    }
+  form.style.display = 'flex';
+}
+
+function closeForm(){
+  var form = document.getElementById('content-form');
+
+  form.style.transition = 'all 0.5s';
+  form.style.display = 'none';
 }
 
 let lastKnownScrollPosition = 0;
