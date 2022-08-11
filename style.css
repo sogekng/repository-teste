@@ -213,9 +213,8 @@ left: 100%;
   display: block;
   justify-content: center;
   flex-direction: row;
-  overflow: auto;
   z-index: 2;
-  margin: 5vh;
+  margin: auto;
 }
 
 .container-container{
@@ -228,14 +227,15 @@ left: 100%;
 
 .card {
   display: flex;
-  height: 100%;
-  width: 15%;
+  height: 270px;
+  width: 147px;
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
+  margin: 0 4vh;
 }
 
 .card img{
