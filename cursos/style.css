@@ -423,3 +423,89 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
 background: transparent;        /* color of the tracking area */
 }
+
+@media (min-width: 400px) and (max-width: 1000px) {
+
+    nav{
+      height: 170vh;
+    }
+  
+    #header {
+      height: 5vh;
+      opacity: 1;
+    }
+    #header-bottom {
+      position: relative;
+      height: 30vh;
+      width: 100%;
+    }
+  
+    .menu ul li a {
+      padding: 1rem 1rem;
+    }
+
+    .menu ul li ul li {
+        min-width: 140px;
+    }
+  
+    #container{
+      height: 50vh;
+      margin: 2vh 0;
+      display: block;
+      overflow: auto;
+    }
+    
+    .container-container{
+      width: 200%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .card{
+      height: 350px;
+      width: 400px;
+      margin: 0vh 2vh;
+    }
+  
+    #content-meio{
+      margin:0;
+      height: 155vh;
+    }
+
+    .content-text {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    }
+  
+    #content-form {
+        height: 50%;
+        width: 70%;
+        padding: 5vh;
+    }
+
+    .content-text-p {
+        width: 70%;
+        height: 70%;
+        padding: 20px;
+    }
+  
+    #form div input {
+      height: 40px
+    }
+  
+    #icone {
+      position: fixed;
+      height: 75px;
+      width: 75px;
+      bottom: 20px;
+      right: 20px;
+      z-index: 5;
+    }
+  
+    footer{
+      margin: 0;
+    }
+  }

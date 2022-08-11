@@ -521,20 +521,35 @@ body::-webkit-scrollbar-track {
   background: transparent;        /* color of the tracking area */
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 400px) and (max-width: 1000px) {
 
   nav{
-    height: 100vh;
+    height: 200vh;
   }
 
   #header {
     height: 5vh;
     opacity: 1;
   }
+  #header-bottom {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+  }
+
+  .menu ul li a {
+    padding: 1rem 1rem;
+  }
+
+  .menu ul li ul li {
+    min-width: 140px;
+  }
 
   #container{
-    height: 30vh;
+    height: 50vh;
     margin: 2vh 0;
+    display: block;
+    overflow: auto;
   }
   
   .container-container{
@@ -542,6 +557,7 @@ body::-webkit-scrollbar-track {
     height: 100%;
     justify-content: center;
     align-items: center;
+
   }
 
   .card{
@@ -555,10 +571,16 @@ body::-webkit-scrollbar-track {
     height: 55vh;
   }
 
-  .content-form{
-    height: 80%;
-    width: 50%;
-    padding: 2vh;
+  #content-form {
+    height: 50%;
+    width: 70%;
+    padding: 5vh;
+  }
+
+  .content-text-p {
+    width: 70%;
+    height: 70%;
+    padding: 20px;
   }
 
   #form div input {
@@ -567,8 +589,8 @@ body::-webkit-scrollbar-track {
 
   #icone {
     position: fixed;
-    height: 140px;
-    width: 140px;
+    height: 75px;
+    width: 75px;
     bottom: 20px;
     right: 20px;
     z-index: 5;
