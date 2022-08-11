@@ -82,36 +82,45 @@ align-items: center;
 }
 
 .menu {
-    margin: 0 auto;
-    max-width: 800px;
-    box-shadow:0 3px 15px rgba(0,0,0,.15);
+margin: 0 auto;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .menu ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+padding: 0;
+margin: 0;
+list-style: none;
+height: 100%;
 }
 
 .menu ul li {
-    float: left;
-    position: relative;
+float: left;
+position: relative;
+height: 100%;
+width: 20vh;
+justify-content: center;
+align-items: center;
 }
 
 .menu ul li a {
-    display: block;
-    color: rgba(255, 255, 255, .9);
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    transition: all .3s ease-in-out;
+color: rgba(255, 255, 255, .9);
+text-decoration: none;
+transition: all .3s ease-in-out;
+height: 100%;
+width: 100%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .menu ul li a:hover,
 .menu ul li a:focus {
-    background: rgb(249, 205, 72);
-    color: #111;
+background: rgb(249, 205, 72);
 }
 
 .menu ul li:hover .dropdown{
@@ -127,27 +136,27 @@ display: block;
 }
 
 .menu ul li a:focus {
-    color: white;
+color: white;
 }
 
 .menu ul li a:not(:only-child)::after {
-    padding-left: 4px;
-    content: ' ▾';
+padding-left: 4px;
+content: ' ▾';
 }
 
 .menu ul li ul li {
-    min-width: 190px;
+min-width: 190px;
 }
 
 .menu ul li ul li a {
-    background: transparent;
-    color: rgb(255, 255, 255);
+background: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 }
 
 .menu ul li ul li a:hover,
 .menu ul li ul li a:focus {
-    background: rgb(249, 205, 72);
-    color: #111;
+background: rgb(249, 205, 72);
+color: #111;
 }
 
 .dropdown {
@@ -241,13 +250,13 @@ margin: auto;
     align-items: center;
     width: 70%;
     height: 70%;
-    padding: 0 20px;
+    padding: 50px 20px;
     border: 3px solid rgb(0, 0, 0);
 }
 
 .content-text-p-01{
     position: relative;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin:auto;
     width: 80%;
 }
@@ -424,10 +433,10 @@ body::-webkit-scrollbar-track {
 background: transparent;        /* color of the tracking area */
 }
 
-@media (min-width: 400px) and (max-width: 1000px) {
+@media (min-width: 400px) and (max-width: 1200px) {
 
     nav{
-      height: 170vh;
+      height: 220vh;
     }
   
     #header {
@@ -439,13 +448,84 @@ background: transparent;        /* color of the tracking area */
       height: 30vh;
       width: 100%;
     }
-  
-    .menu ul li a {
-      padding: 1rem 1rem;
-    }
 
+    .menu {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    }
+    
+    .menu ul li {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 10vh;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .menu ul li a {
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .menu ul li a:hover,
+    .menu ul li a:focus {
+    background: rgb(249, 205, 72);
+    }
+    
+    .menu ul li:hover .dropdown{
+    display: block;
+    }
+    
+    .menu ul li:hover .dropdown li:hover .dropdown-detran{
+    display: block;
+    }
+    
+    .menu ul li:hover .dropdown li:hover .dropdown-antt{
+    display: block;
+    }
+    
+    .menu ul li a:focus {
+    color: white;
+    }
+    
+    .menu ul li a:not(:only-child)::after {
+    padding-left: 4px;
+    content: ' ▾';
+    }
+    
     .menu ul li ul li {
-        min-width: 140px;
+        min-width: 100%;
+        height: 7vh;
+    }
+    
+    .menu ul li ul li a {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    }
+    
+    .menu ul li ul li a:hover,
+    .menu ul li ul li a:focus {
+    background: rgb(249, 205, 72);
+    color: #111;
     }
   
     #container{
@@ -468,10 +548,19 @@ background: transparent;        /* color of the tracking area */
       width: 400px;
       margin: 0vh 2vh;
     }
+
+    #content {
+        flex-direction: column;
+        height: 50%;
+    }
   
     #content-meio{
       margin:0;
-      height: 155vh;
+      height: 200vh;
+    }
+
+    .content-sobre {
+        width: 80%;
     }
 
     .content-text {
@@ -489,7 +578,7 @@ background: transparent;        /* color of the tracking area */
     .content-text-p {
         width: 70%;
         height: 70%;
-        padding: 100px 20px;
+        padding: 5% 20px;
     }
   
     #form div input {
@@ -506,7 +595,7 @@ background: transparent;        /* color of the tracking area */
     }
   
     footer{
-      margin: 0;
+      margin-top: auto;
     }
 
     footer p {
