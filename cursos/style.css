@@ -1,5 +1,5 @@
 body {
-    background-color: #100e17;
+    background-color: #2e3033;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     }
@@ -8,7 +8,7 @@ body {
 position: fixed;
 width: 100%;
 height: 100%;
-background-color: #100e17;
+background-color: #2e3033;
 z-index: 8;
 display: flex;
 justify-content: center;
@@ -35,7 +35,7 @@ border-top-color: rgb(249, 205, 72);
 }
 
 nav{
-background-color: #100e17;
+background-color: #2e3033;
 height: 300vh;
 width: 100vw;
 position: absolute;
@@ -53,8 +53,9 @@ flex-direction: column;
     justify-content: center;
     flex-direction: row;
     z-index: 3;
-    background-color: rgb(16 14 23);
+    background-color: #2e3033;
     transition: 0.3s ease-out;
+    z-index: 4;
 }
 
 #header:after{
@@ -164,27 +165,27 @@ min-width: 100%;
 }
 
 .menu ul li ul li a {
-background-color: rgb(16 14 23);
+background-color: #2e3033;
 color: rgb(255, 255, 255);
 }
 
 .menu ul li ul li a:hover,
 .menu ul li ul li a:focus {
 background: rgb(249, 205, 72);
-color: #111;
+color: #2e3033;
 }
 
 .dropdown {
 display: none;
 position: absolute;
-background: rgb(16 14 23);
+background: #2e3033;
 box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 }
 
 .dropdown-detran{
 display: none;
 position: absolute;
-background: rgb(16 14 23);
+background: #2e3033;
 box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 top: 0;
 left: 100%;
@@ -193,7 +194,7 @@ left: 100%;
   .dropdown-antt{
   display: none;
     position: absolute;
-    background: rgb(16 14 23);
+    background: #2e3033;
     box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
   top: 0;
   left: 100%;
@@ -209,8 +210,9 @@ width: 100vw;
 height: 100vh;
 }
 
+
 #content div h1{
-color: rgb(0, 0, 0);
+color: #2e3033;
 font-size: 2.5rem;
 font-weight: bold;
 margin-bottom: 1rem;
@@ -221,11 +223,19 @@ background-color:#f9cd48;
 }
 
 #content div p{
-color: rgb(0, 0, 0);
+color: #2e3033;
 font-size: 1.5rem;
 font-weight: bold;
 margin-bottom: 1rem;
 }
+
+#image-content{
+    width: 100%;
+    height: 73%;
+    position: absolute;
+    background-image: url('/imgs/cones.jpg');
+    opacity: 10%;
+  }
 
 
 #content-meio{
@@ -246,6 +256,7 @@ margin-bottom: 10vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 3;
 }
 
 .content-text-title{
@@ -254,11 +265,12 @@ margin-bottom: 10vh;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    color: #2e3033;
 
 }
 
 .content-text-p{
-    color: rgb(0, 0, 0);
+    color: #2e3033;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -266,7 +278,7 @@ margin-bottom: 10vh;
     width: 70%;
     height: 70%;
     padding: 50px 20px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid #2e3033;
 }
 
 .content-text-p-01{
@@ -289,7 +301,7 @@ display: none;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-background-color: rgb(16 14 23);
+background-color: #2e3033;
 height: 60%;
 width: 40%;
 padding: 5vh;
@@ -356,7 +368,7 @@ color: white;
 #form div input{
 width: 100%;
 height: 20px;
-color: rgb(0, 0, 0);
+color: #2e3033;
 font-size: 1rem;
 padding: 5px;
 background-color: white;
@@ -364,7 +376,7 @@ border: none;
 }
 
 #form div input:focus{
-    color: rgb(0, 0, 0);
+    color: #2e3033;
     outline: none;
     border: none;
     text-decoration: none;
@@ -413,6 +425,8 @@ footer{
     bottom: 0px;
     position: absolute;
     margin-top: auto;
+    z-index: 2;
+    background-color: #2e3033;
 }
 
 
@@ -531,14 +545,14 @@ background: transparent;        /* color of the tracking area */
     }
     
     .menu ul li ul li a {
-    background: rgb(0, 0, 0);
+    background: #2e3033;
     color: rgb(255, 255, 255);
     }
     
     .menu ul li ul li a:hover,
     .menu ul li ul li a:focus {
     background: rgb(249, 205, 72);
-    color: #111;
+    color: #2e3033;
     }
 
     #icone {

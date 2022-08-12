@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #100e17;
+  background-color: #2e3033;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
@@ -17,7 +17,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #100e17;
+  background-color: #2e3033;
   z-index: 8;
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@ body {
 }
 
 nav{
-  background-color: #100e17;
+  background-color: #2e3033;
   height: 200vh;
   width: 100vw;
   position: absolute;
@@ -61,7 +61,7 @@ nav{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  z-index: 3;
+  z-index: 4;
 }
 
 #header:after{
@@ -90,7 +90,7 @@ nav{
 
 #sobre:focus,
 #contato:focus{
-  background-color: rgb(16 14 23);
+  background-color: #2e3033;
 }
 
 .menu {
@@ -161,27 +161,27 @@ display: block;
 }
 
 .menu ul li ul li a {
-  background-color: rgb(16 14 23);
+  background-color: #2e3033;
   color: rgb(255, 255, 255);
 }
 
 .menu ul li ul li a:hover,
 .menu ul li ul li a:focus {
   background: rgb(249, 205, 72);
-  color: #111;
+  color: #2e3033;
 }
 
 .dropdown {
   display: none;
   position: absolute;
-  background: rgb(16 14 23);
+  background: #2e3033;
   box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 }
 
 .dropdown-detran{
 display: none;
   position: absolute;
-  background: rgb(16 14 23);
+  background: #2e3033;
   box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 top: 0;
 left: 100%;
@@ -190,7 +190,7 @@ left: 100%;
 .dropdown-antt{
 display: none;
   position: absolute;
-  background: rgb(16 14 23);
+  background: #2e3033;
   box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 top: 0;
 left: 100%;
@@ -200,7 +200,7 @@ left: 100%;
   position: relative;
   height: 80vh;
   width: 100%;
-  display: block;
+  display: none;
   justify-content: center;
   flex-direction: row;
   z-index: 1;
@@ -297,6 +297,7 @@ left: 100%;
   width: 100%;
   position: absolute;
   height: 100%;
+  z-index: 3;
 }
 
 .content p {
@@ -305,6 +306,7 @@ left: 100%;
   font-size: 0.5rem;
   margin: auto;
   width: 60%;
+  z-index: 3;
 }
 
 .content h1 {
@@ -314,6 +316,8 @@ left: 100%;
   margin: auto;
   width: 60%;
 }
+
+
 
 .contato-title,
 .sobre-title,
@@ -346,7 +350,7 @@ left: 100%;
 }
 
 svg {
-  fill: #17141d;
+  fill: #2e3033;
   stroke-width: 2px;
 }
 
@@ -367,6 +371,16 @@ svg {
   z-index: 2;
 }
 
+#image-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('imgs/cones.jpg');
+  background-size: contain;
+  opacity: 10%;
+  z-index: 1;
+}
+
 .content-sobre{
   height: 100%;
   width: 100%;
@@ -374,6 +388,8 @@ svg {
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  z-index: 3;
+  color: #2e3033;
 }
 
 .content-contato{
@@ -383,6 +399,8 @@ svg {
   justify-content: flex-start;
   flex-direction: column;
   margin: 10vh 10vw;
+  z-index: 3;
+  color: #2e3033;
 }
 
 
@@ -396,6 +414,9 @@ footer{
   width: 100%;
   text-align: center;
   bottom: 0px;
+  margin-top: auto;
+  z-index: 2;
+  background-color: #2e3033;
 }
 
 
@@ -451,6 +472,7 @@ body::-webkit-scrollbar-track {
     opacity: 1;
   }
   #content-logo{
+    display: flex;
     height: 30vh;
   }
 
@@ -527,14 +549,14 @@ body::-webkit-scrollbar-track {
   }
   
   .menu ul li ul li a {
-  background: rgb(0, 0, 0);
+  background: #2e3033;
   color: rgb(255, 255, 255);
   }
   
   .menu ul li ul li a:hover,
   .menu ul li ul li a:focus {
   background: rgb(249, 205, 72);
-  color: #111;
+  color: #2e3033;
   }
 
   #container{
@@ -585,9 +607,9 @@ body::-webkit-scrollbar-track {
     display: flex;
     height: 190px;
     width: 150px;
-    background-color: #17141d;
+    background-color: #2e3033;
     border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #2e3033;
     transition: 0.4s ease-out;
     position: relative;
     margin: 1vh;
@@ -606,7 +628,7 @@ body::-webkit-scrollbar-track {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(16 14 23 / 79%);
+    background-color: #2e3033;
     position: absolute;
     transition: 0.3s ease-out;
   }

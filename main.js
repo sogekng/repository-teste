@@ -58,7 +58,7 @@ document.addEventListener('scroll', (e) => {
       if(lastKnownScrollPosition < 1){
         document.getElementById('color-header').style.backgroundColor = 'transparent';
       }else if (lastKnownScrollPosition > 1){
-        document.getElementById('color-header').style.backgroundColor = 'rgb(16 14 23)';
+        document.getElementById('color-header').style.backgroundColor = '#2e3033';
       }
     });
 
