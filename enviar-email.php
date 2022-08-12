@@ -30,7 +30,18 @@ try{
 
     $mail->isHTML(true);
     $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'Nome: <b>'.$nome.'</b> <br> E-mail: <b>'.$email.'</b> <br> Telefone: <b>'.$telefone.'</b> <br> Curso: <b>'.$curso.'</b>';
+    $mail->Body    = 
+        '<div style="background-color:brown;">
+            <p">
+                Nome: '.$nome.'
+                <br>
+                E-mail: '.$email.'
+                <br>
+                Telefone: '.$telefone.'
+                <br>
+                Tipo de curso: '.$curso.'
+            </p>
+        </div>';
 
     if($nome == '' || $email == '' || $telefone == '' || $curso == ''){
         echo '<script>alert("Campos vazios!");</script>';

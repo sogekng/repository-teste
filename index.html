@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="traffic.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="main.js"></script>
     <title id="title">Home</title>
 </head>
@@ -57,103 +58,171 @@
             </div>
         </div>
     </div>
-    <div id="header-bottom">
-        <div class="content-header-bottom">
+    <div id="content-logo">
+        <div>
 
         </div>
     </div>
+    
     <div id="container">
         <div class="container-container">
-            <div class="card">
-                <img src="imgs/coletivo.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Transporte Coletivo</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(1)" >Ver mais</button>
-                </div>
+            <script>
+                let num = 0
+
+                function numerosEsq(objeto){
+                    num--
+                    console.log(num);
+                    alterarImagem(objeto)
+                }
+
+                function numerosDir(objeto){
+                    num++
+                    console.log(num);
+                    alterarImagem(objeto)
+                }
+
+                function alterarImagem(objeto) {
+
+
+                    if(num > 6 || num < -6){
+                        num = 0;
+                        document.getElementById(objeto).src = "imgs/coletivo.jpg";
+                    }
+                    if(num == 1 || num == -6){
+                        document.getElementById(objeto).src = "imgs/emergencias.jpg";
+                    }
+                    if(num == 2 || num == -5){
+                        document.getElementById(objeto).src = "imgs/escolar.jpg";
+                    }
+                    if(num == 3 || num == -4){
+                        document.getElementById(objeto).src = "imgs/indivisivel.jpg";
+                    }
+                    if(num == 4 || num == -3){
+                        document.getElementById(objeto).src = "imgs/mopp.jpg";
+                    }
+                    if(num == 5 || num == -2){
+                        document.getElementById(objeto).src = "imgs/rt.jpg";
+                    }
+                    if(num == 6 || num == -1){
+                        document.getElementById(objeto).src = "imgs/tac.jpg";
+                    }
+                }
+            </script>
+            <div class="color-">
             </div>
-            <div class="card">
-                <img src="imgs/emergencias.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Transporte Emergencial</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(2)">Ver mais</button>
-                </div>
+            <div id="container-content1">
+                <button id="button_left" onclick='numerosEsq("img");'><span class="material-symbols-outlined">
+                    navigate_before
+                    </span></button>
+                <button id="button_right" onclick='numerosDir("img");'><span class="material-symbols-outlined">
+                    chevron_right
+                    </span></button>
+                <img id="img" src="imgs/coletivo.jpg" alt="">
             </div>
-            <div class="card">
-                <img src="imgs/escolar.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Tranporte Escolar</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(3)">Ver mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imgs/indivisivel.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Indivisível</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(4)">Ver mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imgs/mopp.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Transporte MOPP</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(5)">Ver mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imgs/rt.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Resp. Técnico – RT</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(6)">Ver mais</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imgs/tac.jpg" alt="car">
-                <div class="content">
-                    <div class="color-card"></div>
-                    <h3 class="title">Transp. Autônomo de Cargas - TAC</h3>
-                    <div class="bar">
-                        <div class="emptybar"></div>
-                        <div class="filledbar"></div>
-                    </div>
-                    <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(7)">Ver mais</button>
-                </div>
-            </div>
+            <!---->    
         </div>
     </div>
     <div id="content">
+        <div id="content-card">
+            <div class="card-title" style="justify-content: center;">
+                <h1 style="margin: 1vh;">Cursos</h1><span class="material-symbols-outlined">auto_stories</span>
+            </div>
+            <div class="card-content">
+                <div class="content1">
+                    <div class="card">
+                        <img src="imgs/coletivo.jpg" alt="car">
+                        <div class="content">
+                            <div class="color-card"></div>
+                            <h3 class="title">Transporte Coletivo</h3>
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(1)" >Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/emergencias.jpg" alt="car">
+                        <div class="content">
+                            <div class="color-card"></div>
+                            <h3 class="title">Transporte Emergencial</h3>
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(2)">Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/escolar.jpg" alt="car">
+                        <div class="content">
+                            <div class="color-card"></div>
+                            <h3 class="title">Tranporte Escolar</h3>
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(3)">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content1">
+                    <div class="card">
+                        <img src="imgs/indivisivel.jpg" alt="car">
+                        <div class="content">
+                            <div class="color-card"></div>
+                            <h3 class="title">Indivisível</h3>
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(4)">Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/mopp.jpg" alt="car">
+                        <div class="content">
+                            <div class="color-card"></div>
+                            <h3 class="title">Transporte MOPP</h3>
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(5)">Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/rt.jpg" alt="car">
+                        <div class="content">
+                            <div class="color-card"></div>
+                            <h3 class="title">Resp. Técnico – RT</h3>
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(6)">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="card">
+                    <img src="imgs/tac.jpg" alt="car">
+                    <div class="content">
+                        <div class="color-card"></div>
+                        <h3 class="title">Transp. Autônomo de Cargas - TAC</h3>
+                        <div class="bar">
+                            <div class="emptybar"></div>
+                            <div class="filledbar"></div>
+                        </div>
+                        <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(7)">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content-sobre" id="sobre">
             <div class="sobre-title">
-                <h1>Quem somos nós</h1>
+                <h1>Quem somos nós</h1><span class="material-symbols-outlined">groups</span>
             </div>
             <div class="sobre-content">
                 <p>
@@ -163,7 +232,7 @@
         </div>
         <div class="content-contato" id="contato">
             <div class="contato-title">
-                <h1>Tire suas duvidas</h1>
+                <span class="material-symbols-outlined">call</span><h1>Tire suas duvidas</h1>
             </div>
             <div class="contato-content">
                 <p>
