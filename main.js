@@ -45,23 +45,23 @@ function doSomething(scrollPos) {
   // Do something with the scroll position
 }
 
-document.addEventListener('scroll', (e) => {
-  lastKnownScrollPosition = window.scrollY;
-
-  console.log(lastKnownScrollPosition)
-
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      doSomething(lastKnownScrollPosition);
-      ticking = false;
-
-      if(lastKnownScrollPosition < 1){
-        document.getElementById('color-header').style.backgroundColor = 'transparent';
-      }else if (lastKnownScrollPosition > 1){
-        document.getElementById('color-header').style.backgroundColor = '#2e3033';
-      }
-    });
-
-    ticking = true;
-  }
-});
+//document.addEventListener('scroll', (e) => {
+//  lastKnownScrollPosition = window.scrollY;
+//
+//  console.log(lastKnownScrollPosition)
+//
+//  if (!ticking) {
+//    window.requestAnimationFrame(() => {
+//      doSomething(lastKnownScrollPosition);
+//      ticking = false;
+//
+//      if(lastKnownScrollPosition < 1){
+//        document.getElementById('color-header').style.backgroundColor = 'transparent';
+//      }else if (lastKnownScrollPosition > 1){
+//        document.getElementById('color-header').style.backgroundColor = '#2e3033';
+//      }
+//    });
+//
+//    ticking = true;
+//  }
+//});
