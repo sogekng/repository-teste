@@ -671,7 +671,7 @@ body::-webkit-scrollbar-track {
   }
 
   #content-meio{
-    margin:auto;
+    margin-bottom: 10vh;
     height: 55vh;
   }
 
