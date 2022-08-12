@@ -711,6 +711,6 @@ body::-webkit-scrollbar-track {
   }
 
   footer{
-    margin-top: 10vh;
+    margin-top: auto;
   }
 }
