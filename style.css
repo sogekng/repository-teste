@@ -275,6 +275,7 @@ display: block;
 
 #content-card{
   display: none;
+  z-index: 1;
 }
 .color-{
   position: absolute;
@@ -499,6 +500,7 @@ svg {
   flex-direction: row;
   background-color: rgb(249, 205, 72);
   transition: all 0.4s ease-in-out;
+  z-index: 3;
 }
 
 #sobre-content1{
@@ -553,6 +555,7 @@ svg {
   color: rgba(255, 255, 255, .9);
   background-color: #2e3033;
   transition: all 0.4s ease-in-out;
+  z-index: 3;
 }
 
 #contato-content{
@@ -682,13 +685,23 @@ body::-webkit-scrollbar-track {
 @media (min-width: 400px) and (max-width: 1000px) {
 
   nav{
-    height: 200vh;
+    height: 210vh;
   }
 
   #header {
     height: 10vh;
     opacity: 1;
   }
+
+  .header-logo {
+      height: 10vh;
+      width: 5vh;
+      border-radius: 50%;
+      margin-right: 0%;
+      display: flex;
+      align-items: center;
+  }
+
   #content-logo{
     display: flex;
     height: 30vh;
@@ -797,11 +810,12 @@ body::-webkit-scrollbar-track {
   
   #content-card{
     height: 100%;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    background-color: #3e567a;
   }
 
   .card-content{
@@ -915,14 +929,22 @@ body::-webkit-scrollbar-track {
     height: 55vh;
   }
 
-  .content-sobre {
-    width: 80%;
-    margin: auto;
+  .content-content-meio{
+    flex-direction: column;
   }
 
-  .content-contato {
-    width: 80%;
-    margin: auto;
+  #content-b{
+    top: 85vh;
+  }
+
+  .content-sobre {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contato{
+    width: 0;
+    display: none;
   }
 
   #content-form {

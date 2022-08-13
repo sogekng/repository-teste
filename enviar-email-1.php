@@ -39,7 +39,7 @@ try{
                 <br>
                 Telefone: '.$telefone.'
                 <br>
-                Tipo de curso: '.$mensagem.'
+                Mensagem: '.$mensagem.'
             </p>
         </div>';
 
@@ -54,6 +54,7 @@ try{
             echo 'Erro ao enviar o email';
         }
     }
+    header("location: index.html");
 }catch(Exception $e){ 
     echo "Erro ao enviar o email. Erro: {$mail->ErrorInfo}";
 }

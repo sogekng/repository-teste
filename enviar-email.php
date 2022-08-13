@@ -72,16 +72,18 @@ try{
         </body>';
 
     if($nome == '' || $email == '' || $telefone == '' || $curso == ''){
+        echo '<script>window.location.replace("index.html");</script>';
         echo '<script>alert("Campos vazios!");</script>';
-        header("location: ./index.html");
     } else {
         if($mail->send()){
-            echo 'Email enviado com sucesso';
-            header("location: ./index.html");
+            echo '<script>window.location.replace("index.html");</script>';
+            echo '<script>alert("Email enviado com sucesso!");</script>';
         }else{ 
-            echo 'Erro ao enviar o email';
+            echo '<script>window.location.replace("index.html");</script>';
+            echo '<script>alert("Erro ao enviar email!");</script>';
         }
     }
+    
 }catch(Exception $e){ 
     echo "Erro ao enviar o email. Erro: {$mail->ErrorInfo}";
 }

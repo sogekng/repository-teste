@@ -76,7 +76,12 @@ function mudarContentSobre(){
   document.getElementById('contato-content').style.opacity = '0';
   document.getElementById('contato-content').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = '#2e3033';
-  document.getElementById('footer').style.color = 'rgba(255, 255, 255, .9)';                    
+  document.getElementById('footer').style.color = 'rgba(255, 255, 255, .9)';
+  
+  if(document.getElementById('sobre').style.display == 'none'){
+    document.getElementById('sobre').style.display = 'flex';
+    document.getElementById('sobre').style.position = 'absolute';
+  }
   
 }
 
