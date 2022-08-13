@@ -501,7 +501,7 @@ svg {
   transition: all 0.4s ease-in-out;
 }
 
-.sobre-content1{
+#sobre-content1{
   height: 100%;
   width: 100%;
   display: flex;
@@ -534,7 +534,7 @@ svg {
   font-weight: 300;
 }
 
-#sobre-content{
+#sobre-content2{
   height: 100%;
   width: 100%;
   display: flex;
@@ -558,7 +558,7 @@ svg {
 #contato-content{
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: row;
   margin: auto;
@@ -1075,7 +1075,7 @@ div.omrs-input-group {
 /** DISABLED **/
 
 .omrs-input-underlined > input:disabled,
-..omrs-input-group > textarea:disabled {
+.omrs-input-group > textarea:disabled {
 	background: var(--omrs-color-bg-low-contrast);
 	cursor: not-allowed;
 }

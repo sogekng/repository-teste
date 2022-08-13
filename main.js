@@ -67,6 +67,8 @@ function doSomething(scrollPos) {
 //});
 
 function mudarContentSobre(){
+  document.getElementById('sobre-content1').style.display = 'flex';
+  document.getElementById('sobre-content2').style.display = 'flex';
   document.getElementById('content-1').style.backgroundColor = 'rgb(249, 205, 72)';
   document.getElementById('content-2').style.backgroundColor = '#2e3033';
   document.getElementById('sobre').style.width = '100%';
@@ -83,6 +85,8 @@ function mudarContentContato(){
   document.getElementById('contato-content').style.display = 'flex';
   document.getElementById('sobre').style.width = '0%';
   document.getElementById('contato').style.width = '100%';
+  document.getElementById('sobre-content1').style.display = 'none';
+  document.getElementById('sobre-content2').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = 'rgb(249, 205, 72)';
   document.getElementById('footer').style.color = '#2e3033';
 }
