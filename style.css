@@ -208,21 +208,21 @@ display: block;
 }
 
 .dropdown-detran{
-display: none;
+  display: none;
   position: absolute;
   background: #2e3033;
   box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
-top: 0;
-left: 100%;
+  top: 0;
+  left: 100%;
 }
 
 .dropdown-antt{
-display: none;
+  display: none;
   position: absolute;
   background: #2e3033;
   box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
-top: 0;
-left: 100%;
+  top: 0;
+  left: 100%;
 }
 
 #content-logo{
@@ -346,8 +346,6 @@ left: 100%;
   width: 60%;
 }
 
-
-
 .contato-title,
 .sobre-title,
 .card-title{
@@ -388,16 +386,90 @@ svg {
   transition: 0.6s ease-out;
 }
 
-
 #content{
   position: relative;
   height: 130vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.content-content-meio{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  /*background-color: rgb(249, 205, 72);*/
+  z-index: 2;
+}
+
+#content-b{
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: transparent;
+  z-index: 2;
+  top: -10vh;
+}
+
+#content-1{
+  height: 100%;
+  width: 15%;
+  position: relative;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: center;
   flex-direction: row;
   background-color: rgb(249, 205, 72);
-  z-index: 2;
+  margin: 2vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vh;
+  cursor: pointer;
+  color: #2e3033;
+}
+
+#content-2{
+  height: 100%;
+  width: 15%;
+  position: relative;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #2e3033;
+  margin: 2vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vh;
+  cursor: pointer;
+  color: rgba(255, 255, 255, .9);
+}
+
+#content-1:hover{
+  color: rgba(255, 255, 255, .9);
+}
+
+#content-2:hover{
+  color: rgb(249, 205, 72);
+}
+
+#content-1 h1{
+  font-size: 1rem;
+}
+
+#content-2 h1{
+  font-size: 1rem;
 }
 
 #image-content{
@@ -424,23 +496,131 @@ svg {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  background-color: rgb(249, 205, 72);
+  transition: all 0.4s ease-in-out;
+}
+
+.sobre-content1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.sobre-img{
+  width: 40%;
+  height: 20%;
+}
+
+.sobre-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sobre-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-text p{
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#sobre-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: auto;
-  z-index: 3;
   color: #2e3033;
+  transition: all 0.4s ease-in-out;
 }
 
 .content-contato{
   height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
+  width: 0%;
+  justify-content: center;
   flex-direction: column;
-  margin: 10vh 10vw;
-  z-index: 3;
-  color: #2e3033;
+  color: rgba(255, 255, 255, .9);
+  background-color: #2e3033;
+  transition: all 0.4s ease-in-out;
 }
 
+#contato-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  color: rgba(255, 255, 255, .9);
+  transition: all 0.4s ease-in-out;
+}
+
+.contato-text{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+
+}
+
+.contato-form{
+  height: 60%;
+  width: 35%;
+  padding: 5vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  color: rgba(255, 255, 255, .9);
+  background-color: rgb(249, 205, 72);
+  transition: all 0.4s ease-in-out;
+}
+
+.contato-form h1{
+  color: #121212;
+}
+
+.contato-form-input{
+  height: 10%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1vh auto;
+  color: rgba(255, 255, 255, .9);
+  transition: all 0.4s ease-in-out;
+}
+
+.contato-form-input input:focus{
+  outline: none;
+}
+
+.contato-form-input button{
+  height: 100%;
+  width: auto;
+  display: flex;
+  border: 0;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: yellow;
+  transition: all 0.4s ease-in-out;
+}
 
 footer{
   transition: all 0.4s ease 0s;
@@ -455,11 +635,11 @@ footer{
   margin-top: auto;
   z-index: 2;
   background-color: #2e3033;
+  color: rgba(255, 255, 255, .9);
 }
 
 
 footer p{
-  color: white;
   font-weight: 300;
   font-size: 14px;
   margin: 0;
@@ -573,7 +753,7 @@ body::-webkit-scrollbar-track {
   }
   
   .menu ul li a:focus {
-  color: white;
+  color: rgba(255, 255, 255, .9);
   }
   
   .menu ul li a:not(:only-child)::after {
@@ -588,7 +768,7 @@ body::-webkit-scrollbar-track {
   
   .menu ul li ul li a {
   background: #2e3033;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .9);
   }
   
   .menu ul li ul li a:hover,
@@ -672,7 +852,7 @@ body::-webkit-scrollbar-track {
   }
   
   .title {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, .9);
     font-weight: 300;
     position: absolute;
     top: 0px;
@@ -773,4 +953,166 @@ body::-webkit-scrollbar-track {
   footer{
     margin-top: auto;
   }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+	font-family: "Roboto";
+}
+div.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-top: 30px;
+	border: 1px solid rgba(255, 255, 255, .9);
+	padding: 21px;
+	border-radius: 4px;
+}
+h4.title {
+	text-align: center;
+	margin-bottom: 45px;
+}
+:root {
+  --omrs-color-ink-lowest-contrast: #121212;
+  --omrs-color-ink-low-contrast: #121212;
+  --omrs-color-ink-medium-contrast: #121212;
+  --omrs-color-interaction: #121212;
+  --omrs-color-interaction-minus-two: #121212;
+  --omrs-color-danger: #b50706;
+  --omrs-color-bg-low-contrast: rgba(255, 255, 255, .9);
+  --omrs-color-ink-high-contrast: #121212;
+  --omrs-color-bg-high-contrast: rgba(255, 255, 255, .9);
+	
+}
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 70%;
+  margin: 1vh auto;
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input
+{
+	border: none;
+	border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.omrs-input-group textarea{
+  width: 235px;
+  height: 60px;
+}
+
+.omrs-input-group textarea:focus{
+  outline: none;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+.omrs-input-underlined > svg,
+.omrs-input-filled > svg {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.875rem;
+	fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+	font-size: 0.9375rem;
+	color: var(--omrs-color-ink-medium-contrast);
+	letter-spacing: 0.0275rem;
+	margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+	color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus,
+.omrs-input-group:not(.omrs-input-danger) > textarea:focus {
+	border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+	fill: var(--omrs-color-ink-high-contrast);
+}
+
+/** DISABLED **/
+
+.omrs-input-underlined > input:disabled,
+..omrs-input-group > textarea:disabled {
+	background: var(--omrs-color-bg-low-contrast);
+	cursor: not-allowed;
+}
+
+.omrs-input-underlined > input:disabled + .omrs-input-label,
+.omrs-input-underlined > input:disabled ~ .omrs-input-helper{
+	color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input:disabled ~ svg {
+	fill: var(--omrs-color-ink-low-contrast);
+}
+
+
+/** DANGER **/
+
+.omrs-input-underlined.omrs-input-danger > .omrs-input-label, .omrs-input-underlined.omrs-input-danger > .omrs-input-helper,
+.omrs-input-filled.omrs-input-danger > .omrs-input-label, .omrs-input-filled.omrs-input-danger > .omrs-input-helper{
+	color: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > svg {
+	fill: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > input {
+	border-color: var(--omrs-color-danger);
+}
+
+.omrs-input-underlined > input {
+	background: var(--omrs-color-bg-high-contrast);
+}
+
+.omrs-input-group > textarea {
+  background: var(--omrs-color-bg-high-contrast);
+}
+
+.omrs-input-filled > input {
+	background: var(--omrs-color-bg-low-contrast);
 }

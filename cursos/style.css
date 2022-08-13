@@ -296,23 +296,21 @@ margin-bottom: 10vh;
 }
 
 #content-form{
-position: fixed;
-display: none;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-background-color: #2e3033;
-height: 60%;
-width: 40%;
-padding: 5vh;
-margin: auto;
-top: 0;
-bottom: 0;
-z-index: 11;
-margin: auto;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e3033;
+    height: 50%;
+    width: 30%;
+    padding: 5vh;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    margin: auto;
 }
-
-
 
 .content-form-title h1{
 color: white;
@@ -598,4 +596,179 @@ background: transparent;        /* color of the tracking area */
     #form div input {
       height: 40px
     }
+  }
+
+
+  #content-form{
+    height: 50%;
+    width: 30%;
+    padding: 5vh;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: rgba(255, 255, 255, .9);
+    background-color: #2e3033;
+    transition: all 0.4s ease-in-out;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+  * {
+      font-family: "Roboto";
+  }
+  div.container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin-top: 30px;
+      border: 1px solid rgba(255, 255, 255, .9);
+      padding: 21px;
+      border-radius: 4px;
+  }
+  h4.title {
+      text-align: center;
+      margin-bottom: 45px;
+  }
+  :root {
+      --omrs-color-ink-lowest-contrast: #121212;
+      --omrs-color-ink-low-contrast: #121212;
+      --omrs-color-ink-medium-contrast: #121212;
+      --omrs-color-interaction: #f9cd48;
+      --omrs-color-interaction-minus-two: #121212;
+      --omrs-color-danger: #b50706;
+      --omrs-color-bg-low-contrast: rgba(255, 255, 255, .9);
+      --omrs-color-ink-high-contrast: #121212;
+      --omrs-color-bg-high-contrast: rgba(255, 255, 255, .9);
+      
+  }
+
+  div.omrs-input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 70%;
+    margin: 1vh auto;
+  }
+
+
+  .omrs-input-underlined > input,
+  .omrs-input-filled > input
+  {
+      border: none;
+      border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+      width: 100%;
+      height: 2rem;
+      font-size: 1.0625rem;
+      padding-left: 0.875rem;
+      line-height: 147.6%;
+      padding-top: 0.825rem;
+      padding-bottom: 0.5rem;
+  }
+  
+  .omrs-input-group textarea{
+    width: 235px;
+    height: 60px;
+  }
+  
+  .omrs-input-group textarea:focus{
+    outline: none;
+  }
+  
+  .omrs-input-underlined > input:focus,
+  .omrs-input-filled > input:focus {
+      outline: none;
+  }
+  
+  .omrs-input-underlined > .omrs-input-label,
+  .omrs-input-filled > .omrs-input-label {
+      position: absolute;
+      top: 0.9375rem;
+      left: 0.875rem;
+      line-height: 147.6%;
+      color: var(--omrs-color-ink-medium-contrast);
+      transition: top .2s;
+  }
+  
+  .omrs-input-underlined > svg,
+  .omrs-input-filled > svg {
+      position: absolute;
+      top: 0.9375rem;
+      right: 0.875rem;
+      fill: var(--omrs-color-ink-medium-contrast);
+  }
+  
+  .omrs-input-underlined > .omrs-input-helper,
+  .omrs-input-filled > .omrs-input-helper {
+      font-size: 0.9375rem;
+      color: var(--omrs-color-ink-medium-contrast);
+      letter-spacing: 0.0275rem;
+      margin: 0.125rem 0.875rem;
+  }
+  
+  .omrs-input-underlined > input:focus + .omrs-input-label,
+  .omrs-input-underlined > input:valid + .omrs-input-label,
+  .omrs-input-filled > input:focus + .omrs-input-label,
+  .omrs-input-filled > input:valid + .omrs-input-label {
+      top: 0;
+      font-size: 0.9375rem;
+      margin-bottom: 32px;;
+  }
+  
+  .omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+  .omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+      color: var(--omrs-color-interaction);
+  }
+  
+  .omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+  .omrs-input-filled:not(.omrs-input-danger) > input:focus,
+  .omrs-input-group:not(.omrs-input-danger) > textarea:focus {
+      border-color: var(--omrs-color-interaction);
+  }
+  
+  .omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+  .omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+      fill: var(--omrs-color-ink-high-contrast);
+  }
+  
+  /** DISABLED **/
+  
+  .omrs-input-underlined > input:disabled,
+  .omrs-input-group > textarea:disabled {
+      background: var(--omrs-color-bg-low-contrast);
+      cursor: not-allowed;
+  }
+  
+  .omrs-input-underlined > input:disabled + .omrs-input-label,
+  .omrs-input-underlined > input:disabled ~ .omrs-input-helper{
+      color: var(--omrs-color-ink-low-contrast);
+  }
+  
+  .omrs-input-underlined > input:disabled ~ svg {
+      fill: var(--omrs-color-ink-low-contrast);
+  }
+  
+  
+  /** DANGER **/
+  
+  .omrs-input-underlined.omrs-input-danger > .omrs-input-label, .omrs-input-underlined.omrs-input-danger > .omrs-input-helper,
+  .omrs-input-filled.omrs-input-danger > .omrs-input-label, .omrs-input-filled.omrs-input-danger > .omrs-input-helper{
+      color: var(--omrs-color-danger);
+  }
+  
+  .omrs-input-danger > svg {
+      fill: var(--omrs-color-danger);
+  }
+  
+  .omrs-input-danger > input {
+      border-color: var(--omrs-color-danger);
+  }
+  
+  .omrs-input-underlined > input {
+      background: var(--omrs-color-bg-high-contrast);
+  }
+  
+  .omrs-input-group > textarea {
+    background: var(--omrs-color-bg-high-contrast);
+  }
+  
+  .omrs-input-filled > input {
+      background: var(--omrs-color-bg-low-contrast);
   }

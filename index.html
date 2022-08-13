@@ -25,7 +25,6 @@
     </div>
 <nav id="nav">
     <div id="header">
-        <div id="color-header"></div>
         <div class="header-logo">
             <img src="imgs/LOGO.png" alt="">
         </div>
@@ -55,8 +54,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a onclick="mudarContentSobre()" href="#sobre">Sobre</a></li>
+                    <li><a onclick="mudarContentContato()" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -127,127 +126,166 @@
         </div>
     </div>
     <div id="content">
-        <div id="content-card">
-            <div class="card-title" style="justify-content: center;">
-                <h1 style="margin: 1vh;">Cursos</h1><span class="material-symbols-outlined">auto_stories</span>
-            </div>
-            <div class="card-content">
-                <div class="content1">
-                    <div class="card">
-                        <img src="imgs/coletivo.jpg" alt="car">
-                        <div class="content">
-                            <div class="color-card"></div>
-                            <h3 class="title">Transporte Coletivo</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
+        <div id="content-b">
+            <div id="content-1" onclick="mudarContentSobre()"><h1>Quem somos nós</h1><span class="material-symbols-outlined">groups</span></div>
+            <div id="content-2" onclick="mudarContentContato()"><span class="material-symbols-outlined">call</span><h1>Tire suas duvidas</h1></div>
+        </div>
+        <div class="content-content-meio">
+            <div id="content-card">
+                <div class="card-title" style="justify-content: center;">
+                    <h1 style="margin: 1vh;">Cursos</h1><span class="material-symbols-outlined">auto_stories</span>
+                </div>
+                <div class="card-content">
+                    <div class="content1">
+                        <div class="card">
+                            <img src="imgs/coletivo.jpg" alt="car">
+                            <div class="content">
+                                <div class="color-card"></div>
+                                <h3 class="title">Transporte Coletivo</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(1)" >Ver mais</button>
                             </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(1)" >Ver mais</button>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/emergencias.jpg" alt="car">
+                            <div class="content">
+                                <div class="color-card"></div>
+                                <h3 class="title">Transporte Emergencial</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(2)">Ver mais</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/escolar.jpg" alt="car">
+                            <div class="content">
+                                <div class="color-card"></div>
+                                <h3 class="title">Tranporte Escolar</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(3)">Ver mais</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="imgs/emergencias.jpg" alt="car">
-                        <div class="content">
-                            <div class="color-card"></div>
-                            <h3 class="title">Transporte Emergencial</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
+                    <div class="content1">
+                        <div class="card">
+                            <img src="imgs/indivisivel.jpg" alt="car">
+                            <div class="content">
+                                <div class="color-card"></div>
+                                <h3 class="title">Indivisível</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(4)">Ver mais</button>
                             </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(2)">Ver mais</button>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="imgs/escolar.jpg" alt="car">
-                        <div class="content">
-                            <div class="color-card"></div>
-                            <h3 class="title">Tranporte Escolar</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
+                        <div class="card">
+                            <img src="imgs/mopp.jpg" alt="car">
+                            <div class="content">
+                                <div class="color-card"></div>
+                                <h3 class="title">Transporte MOPP</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(5)">Ver mais</button>
                             </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(3)">Ver mais</button>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/rt.jpg" alt="car">
+                            <div class="content">
+                                <div class="color-card"></div>
+                                <h3 class="title">Resp. Técnico – RT</h3>
+                                <div class="bar">
+                                    <div class="emptybar"></div>
+                                    <div class="filledbar"></div>
+                                </div>
+                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(6)">Ver mais</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="content1">
                     <div class="card">
-                        <img src="imgs/indivisivel.jpg" alt="car">
+                        <img src="imgs/tac.jpg" alt="car">
                         <div class="content">
                             <div class="color-card"></div>
-                            <h3 class="title">Indivisível</h3>
+                            <h3 class="title">Transp. Autônomo de Cargas - TAC</h3>
                             <div class="bar">
                                 <div class="emptybar"></div>
                                 <div class="filledbar"></div>
                             </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(4)">Ver mais</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imgs/mopp.jpg" alt="car">
-                        <div class="content">
-                            <div class="color-card"></div>
-                            <h3 class="title">Transporte MOPP</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
-                            </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(5)">Ver mais</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="imgs/rt.jpg" alt="car">
-                        <div class="content">
-                            <div class="color-card"></div>
-                            <h3 class="title">Resp. Técnico – RT</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
-                            </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(6)">Ver mais</button>
+                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(7)">Ver mais</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content1">
-                <div class="card">
-                    <img src="imgs/tac.jpg" alt="car">
-                    <div class="content">
-                        <div class="color-card"></div>
-                        <h3 class="title">Transp. Autônomo de Cargas - TAC</h3>
-                        <div class="bar">
-                            <div class="emptybar"></div>
-                            <div class="filledbar"></div>
-                        </div>
-                        <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(7)">Ver mais</button>
+            <div class="content-sobre" id="sobre">
+                <div class="sobre-content1">
+                    <div class="sobre-img">
+                        <img src="imgs/LOGO.png" alt="">
+                    </div>
+                    <div class="sobre-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolore eos nam pariatur consequatur omnis? Alias, dolore aut fugiat quas iste maxime. Pariatur exercitationem quod quidem qui nisi hic eos?    </p>
                     </div>
                 </div>
+                <div id="sobre-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
+                    </p>
+                </div>
             </div>
+            <div class="content-contato" id="contato">
+                <div id="contato-content">
+                    <div class="contato-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto rem quia voluptatem ad ipsum qui impedit quaerat exercitationem totam officiis dolorem, minus repellat, ut voluptas enim vitae temporibus quidem?
+                        </p>
+                    </div>
+                    <form action="enviar-email-1.php" class="contato-form" method="POST">
+                        <h1>Mande sua Dúvida</h1>
+                        <div class="omrs-input-group">
+                            <label class="omrs-input-underlined">
+                                <input name="nome" required>
+                                <span class="omrs-input-label">Nome</span>
+                            </label>
+                        </div>
+                        <div class="omrs-input-group">
+                            <label class="omrs-input-underlined">
+                                <input name="email" required>
+                                <span class="omrs-input-label">E-mail</span>
+                            </label>
+                        </div>
+                        <div class="omrs-input-group">
+                            <label class="omrs-input-underlined">
+                                <input name="telefone" required>
+                                <span class="omrs-input-label">Telefone</span>
+                            </label>
+                        </div>
+                        <div class="omrs-input-group">
+                            <textarea name="mensagem" cols="30" rows="10" style="width: 95%;height: 2rem;padding:2vh;"></textarea>
+                        </div>
+                        <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:#f9cd48;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:1vh auto;text-decoration:none;" onclick="">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <!--<div id="image-content">
+                <div class="content-img">
+                </div>
+            </div>-->
         </div>
-        <div class="content-sobre" id="sobre">
-            <div class="sobre-title">
-                <h1>Quem somos nós</h1><span class="material-symbols-outlined">groups</span>
-            </div>
-            <div class="sobre-content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
-                </p>
-            </div>
-        </div>
-        <div class="content-contato" id="contato">
-            <div class="contato-title">
-                <span class="material-symbols-outlined">call</span><h1>Tire suas duvidas</h1>
-            </div>
-            <div class="contato-content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
-                </p>
-            </div>
-        </div>
-        <div id="image-content">
-            <div class="content-img">
-            </div>
-        </div>
+        
     </div>
     <footer id="footer">
         <div class="container_footer">

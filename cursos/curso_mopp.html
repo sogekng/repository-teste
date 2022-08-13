@@ -62,7 +62,6 @@
         </div>
       </div>
       <div id="content-meio">
-        <div id="image-content"></div>
         <div class="content-text">
           <div class="content-text-title">
             <h1>Curso - Transp. MOPP</h1><span class="material-symbols-outlined">task_alt</span> <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm()">Assinar</button>
@@ -111,40 +110,42 @@
             </div>
           </div>
         </div>
-        <div id="content-form">
+        <form id="content-form" action="../enviar-email.php" id="form" method="POST">
           <div class="content-form-title">
-            <h1>Preencha os dados</h1>
+            <h1>Peencha os dados</h1>
             <p onclick="closeForm()">X</p>
           </div>
-            <form action="../enviar-email.php" id="form" method="POST">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="form-control" id="input-nome" aria-describedby="nomeHelp" placeholder="Digite seu nome" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="input-email" placeholder="E-mail" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Whatsapp</label>
-                    <input type="text" name="telefone" class="form-control" id="input-telefone" placeholder="Telefone" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <label for="curso">Tipo de curso:</label>
-                  <select name="curso" id="appearance-select">
-                    <option value="Transporte Coletivo">Transporte Coletivo</option>
-                    <option value="Transporte Emergencial">Transporte Emergencial</option>
-                    <option value="Transporte Escolar">Transporte Escolar</option>
-                    <option value="Transporte Indivisivel">Transporte Indivisivel</option>
-                    <option value="Transporte Cargas Perigosas" selected>Transporte Cargas Perigosas - MOPP</option>
-                    <option value="Responsavel Tecnico">Responsavel Tecnico - RT</option>
-                    <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas - TAC</option>
-                  </select>
-              </div>
-                <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:auto;text-decoration:none;" onclick="">Enviar</button>
-            </form>
-        </div>
-      </div>
+            <div class="omrs-input-group">
+                <label class="omrs-input-underlined">
+                    <input name="nome" required>
+                    <span class="omrs-input-label">Nome</span>
+                </label>
+            </div>
+            <div class="omrs-input-group">
+                <label class="omrs-input-underlined">
+                    <input type="text" type="email" name="email" required>
+                    <span class="omrs-input-label">E-mail</span>
+                </label>
+            </div>
+            <div class="omrs-input-group">
+                <label class="omrs-input-underlined">
+                    <input type="text" name="telefone" required>
+                    <span class="omrs-input-label">Telefone</span>
+                </label>
+            </div>
+            <div class="form-group">
+              <select name="curso" id="appearance-select">
+                <option value="Transporte Coletivo">Transporte Coletivo</option>
+                <option value="Transporte Emergencial">Transporte Emergencial</option>
+                <option value="Transporte Escolar">Transporte Escolar</option>
+                <option value="Transporte Indivisivel">Transporte Indivisivel</option>
+                <option value="Transporte Cargas Perigosas" selected>Transporte Cargas Perigosas - MOPP</option>
+                <option value="Responsavel Tecnico">Responsavel Tecnico - RT</option>
+                <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas - TAC</option>
+              </select>
+            </div>
+            <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:rgb(249, 205, 72);color:#2e3033;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:1vh auto;text-decoration:none;" onclick="">Enviar</button>
+        </form>
       <footer id="footer">
         <div class="container_footer">
             <div class="row">
