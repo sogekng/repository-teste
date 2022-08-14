@@ -67,29 +67,24 @@ function doSomething(scrollPos) {
 //});
 
 function mudarContentSobre(){
+  document.getElementById('sobre-content').style.display = 'flex';
   document.getElementById('sobre-content1').style.display = 'flex';
   document.getElementById('sobre-content2').style.display = 'flex';
   document.getElementById('content-1').style.backgroundColor = 'rgb(249, 205, 72)';
   document.getElementById('content-2').style.backgroundColor = '#2e3033';
-  document.getElementById('sobre').style.width = '100%';
-  document.getElementById('contato').style.width = '0%';
-  document.getElementById('contato-content').style.opacity = '0';
+  document.getElementById('sobre').style.display = 'flex';
+  document.getElementById('contato').style.display = 'none';
   document.getElementById('contato-content').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = '#2e3033';
   document.getElementById('footer').style.color = 'rgba(255, 255, 255, .9)';
   
-  if(document.getElementById('sobre').style.display == 'none'){
-    document.getElementById('sobre').style.display = 'flex';
-    document.getElementById('sobre').style.position = 'absolute';
-  }
-  
 }
 
 function mudarContentContato(){
-  document.getElementById('contato-content').style.opacity = '1';
+  document.getElementById('sobre-content').style.display = 'none';
   document.getElementById('contato-content').style.display = 'flex';
-  document.getElementById('sobre').style.width = '0%';
-  document.getElementById('contato').style.width = '100%';
+  document.getElementById('contato').style.display = 'flex';
+  document.getElementById('sobre').style.display = 'none';
   document.getElementById('sobre-content1').style.display = 'none';
   document.getElementById('sobre-content2').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = 'rgb(249, 205, 72)';

@@ -414,7 +414,7 @@ svg {
   height: 10vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-direction: row;
   background-color: transparent;
   z-index: 2;
@@ -549,7 +549,8 @@ svg {
 
 .content-contato{
   height: 100%;
-  width: 0%;
+  width: 100%;
+  display: none;
   justify-content: center;
   flex-direction: column;
   color: rgba(255, 255, 255, .9);
@@ -565,6 +566,17 @@ svg {
   justify-content: center;
   flex-direction: row;
   margin: auto;
+  color: rgba(255, 255, 255, .9);
+  transition: all 0.4s ease-in-out;
+}
+
+#sobre-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 10vh;
   color: rgba(255, 255, 255, .9);
   transition: all 0.4s ease-in-out;
 }
@@ -661,17 +673,33 @@ footer p{
 
 #icone{
   position: fixed;
-  height: 50px;
-  width: 50px;
-  bottom: 5px;
-  right: 5px;
+  height: 45px;
+  width: 220px;
+  bottom: 10px;
+  right: 10px;
   z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: linear-gradient(90deg, #16a12e, #1cc739, #16a12e);
+  border-radius: 15px;
+  transition: 0.2s ease-out;
 }
 
 #icone img{
-  height: 100%;
-  width: 100%;
+  height: 35px;
+  width: 35px;
 }
+
+#icone p{
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+  width: 80%;
+}
+
+
 
 
 body::-webkit-scrollbar {
@@ -685,7 +713,7 @@ body::-webkit-scrollbar-track {
 @media (min-width: 400px) and (max-width: 1000px) {
 
   nav{
-    height: 210vh;
+    height: 200vh;
   }
 
   #header {
@@ -807,6 +835,16 @@ body::-webkit-scrollbar-track {
   #container-content1{
     display: none;
   }
+
+  #content-1{
+    transition: all 0.2s ease-in-out;
+    width: 25%;
+  }
+
+  #content-2{
+    transition: all 0.2s ease-in-out;
+    width: 25%;
+  }
   
   #content-card{
     height: 100%;
@@ -921,7 +959,7 @@ body::-webkit-scrollbar-track {
 
   #content {
     flex-direction: column;
-    height: 75%;
+    height: 100%;
   }
 
   #content-meio{
@@ -937,14 +975,27 @@ body::-webkit-scrollbar-track {
     top: 85vh;
   }
 
-  .content-sobre {
-    width: 100%;
-    height: 100%;
+  .content-contato{
+    display:  none;
   }
 
-  #contato{
-    width: 0;
+  #contato-content{
+    flex-direction: column;
+  }
+
+  .contato-text {
+    height: 100%;
+    width: 50%;
     display: none;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .contato-form {
+    height: 70%;
+    width: 60%;
+    padding: 3vh 5vh;
   }
 
   #content-form {
@@ -970,10 +1021,24 @@ body::-webkit-scrollbar-track {
     bottom: 20px;
     right: 20px;
     z-index: 5;
+    background: transparent;
+    transition: 0.2s ease-out;
+  }
+
+  #icone img{
+    height: 100%;
+    width: 100%;
+  }
+
+  #icone p{
+    transition: 0.2s ease-out;
+    width: 0%;
+    display: none;
   }
 
   footer{
     margin-top: auto;
+    height: 20vh;
   }
 }
 
