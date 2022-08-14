@@ -66,7 +66,7 @@
         </div>
     </div>
     
-    <div id="container">
+    <div id="container" onmouseover="on()" onmouseout="off()">
         <div class="container-container">
             <script>
                 let num = 0
@@ -85,42 +85,65 @@
 
                 function alterarImagem(objeto) {
 
+                    var content_img = document.getElementById('container-img');
+                    var button = document.createElement('button');
+                    button.setAttribute('id', 'button-content');
+                    var button_text = document.getElementById('container-button-top-text');
 
+                    content_img.appendChild(button);
                     if(num > 6 || num < -6){
                         num = 0;
                         document.getElementById(objeto).src = "imgs/coletivo.jpg";
-                        
+                        button.setAttribute('onclick', 'sobre(1)');
+                        button_text.textContent = "TRANSPORTE COLETIVO";
                     }
                     if(num == 1 || num == -6){
                         document.getElementById(objeto).src = "imgs/emergencias.jpg";
+                        button.setAttribute('onclick', 'sobre(2)');
+                        button_text.textContent = "TRANSPORTE EMERGENCIAL";
                     }
                     if(num == 2 || num == -5){
                         document.getElementById(objeto).src = "imgs/escolar.jpg";
+                        button.setAttribute('onclick', 'sobre(3)');
+                        button_text.textContent = "TRANSPORTE ESCOLAR";
                     }
                     if(num == 3 || num == -4){
                         document.getElementById(objeto).src = "imgs/indivisivel.jpg";
+                        button.setAttribute('onclick', 'sobre(4)');
+                        button_text.textContent = "TRANSPORTE INDIVISIVEL";
                     }
                     if(num == 4 || num == -3){
                         document.getElementById(objeto).src = "imgs/mopp.jpg";
+                        button.setAttribute('onclick', 'sobre(5)');
+                        button_text.textContent = "TRANSPORTE MOPP";
                     }
                     if(num == 5 || num == -2){
                         document.getElementById(objeto).src = "imgs/rt.jpg";
+                        button.setAttribute('onclick', 'sobre(6)');
+                        button_text.textContent = "RESPONSAVEL TECNICO - RT";
                     }
                     if(num == 6 || num == -1){
                         document.getElementById(objeto).src = "imgs/tac.jpg";
+                        button.setAttribute('onclick', 'sobre(7)');
+                        button_text.textContent = "TRANSPORTE RODOVIARIO DE CARGA - TAC";
                     }
                 }
             </script>
             <div class="color-">
             </div>
-            <div id="container-content1" style="display:none;">
-                <button id="button_left" onclick='numerosEsq("img");'><span class="material-symbols-outlined">
-                    navigate_before
-                    </span></button>
-                <button id="button_right" onclick='numerosDir("img");'><span class="material-symbols-outlined">
-                    chevron_right
-                    </span></button>
-                <img id="img" src="imgs/coletivo.jpg" alt="">
+            <div id="container-content1">
+                <button id="button_left" onclick='numerosEsq("img");'><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
+                <button id="button_right" onclick='numerosDir("img");'><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+
+                <div id="container-img">
+                    <img id="img" src="imgs/coletivo.jpg" alt="">
+                    <div id="container-button">
+                        <div class="container-button-top">
+                            <strong><p id="container-button-top-text">TRANSPORTE COLETIVO</p></strong>
+                        </div>
+                        <button id="button-content" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;max-width:100%;width: 200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));color:#100e17;font-size: 1rem;border-radius:25px;font-weight:bold;height: 50px;cursor:pointer;text-align:center;text-decoration:none;position:absolute;bottom: 10%;left: 45%;" onclick="sobre(1)">Ver mais</button>
+                    </div>
+                </div>
             </div>
             <!---->    
         </div>
@@ -315,9 +338,22 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
         </p>
     </footer>
-    <a href="https://api.whatsapp.com/send/?phone=5511986333241&text=Ola, eu tenho uma dúvida" id="icone" target="_blank">
-        <img src="imgs/whatsapp.png" alt="icone">
-        <p>Entre em contato conosco</p>
-    </a> 
+    <script>
+        let lastKnownScrollPosition = 0;
+        let ticking = false;
+
+        document.addEventListener('scroll', (e) => {
+        lastKnownScrollPosition = window.scrollY;
+
+        console.log(lastKnownScrollPosition)
+
+        if(lastKnownScrollPosition < 2){
+            document.getElementById('button-home').style.display = 'none';
+        }else{
+            document.getElementById('button-home').style.display = 'flex';
+        }
+        });
+    </script>
+    <a href="#home" id="button-home" style="position:fixed;z-index:5;height: 45px;width: 45px;border-radius: 50px;bottom: 10px;align-items: center;display: none;right: 10px;z-index: 5;justify-content: center;margin:auto;text-align: center;text-decoration:none;color:#ffffff;background:#100e17;"><span class="material-symbols-outlined">arrow_upward</span></a> 
 </nav>
 </body>

@@ -38,34 +38,6 @@ function closeForm(){
   form.style.display = 'none';
 }
 
-let lastKnownScrollPosition = 0;
-let ticking = false;
-
-function doSomething(scrollPos) {
-  // Do something with the scroll position
-}
-
-//document.addEventListener('scroll', (e) => {
-//  lastKnownScrollPosition = window.scrollY;
-//
-//  console.log(lastKnownScrollPosition)
-//
-//  if (!ticking) {
-//    window.requestAnimationFrame(() => {
-//      doSomething(lastKnownScrollPosition);
-//      ticking = false;
-//
-//      if(lastKnownScrollPosition < 1){
-//        document.getElementById('color-header').style.backgroundColor = 'transparent';
-//      }else if (lastKnownScrollPosition > 1){
-//        document.getElementById('color-header').style.backgroundColor = '#2e3033';
-//      }
-//    });
-//
-//    ticking = true;
-//  }
-//});
-
 function mudarContentSobre(){
   document.getElementById('sobre-content').style.display = 'flex';
   document.getElementById('sobre-content1').style.display = 'flex';
@@ -77,6 +49,7 @@ function mudarContentSobre(){
   document.getElementById('contato-content').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = '#2e3033';
   document.getElementById('footer').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-home').style.backgroundColor = '#232527';
   
 }
 
@@ -89,4 +62,19 @@ function mudarContentContato(){
   document.getElementById('sobre-content2').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = 'rgb(249, 205, 72)';
   document.getElementById('footer').style.color = '#2e3033';
+  document.getElementById('button-home').style.backgroundColor = 'rgb(231, 175, 4)';
+}
+
+
+function on(){
+  var button = document.getElementById('container-button');
+  button.style.transition = 'all 0.5s';
+  button.style.opacity = '1';
+  
+}
+
+function off(){
+  var button = document.getElementById('container-button');
+  button.style.transition = 'all 0.5s';
+  button.style.opacity = '0';
 }
