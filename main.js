@@ -49,7 +49,6 @@ function mudarContentSobre(){
   document.getElementById('contato-content').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = '#2e3033';
   document.getElementById('footer').style.color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-home').style.backgroundColor = '#232527';
   
 }
 
@@ -62,7 +61,6 @@ function mudarContentContato(){
   document.getElementById('sobre-content2').style.display = 'none';
   document.getElementById('footer').style.backgroundColor = 'rgb(249, 205, 72)';
   document.getElementById('footer').style.color = '#2e3033';
-  document.getElementById('button-home').style.backgroundColor = 'rgb(231, 175, 4)';
 }
 
 

@@ -251,6 +251,14 @@ margin-bottom: 1rem;
     background-color: #2e3033;
   }
 
+.content-top-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .content-top-content{
     display: flex;
     justify-content: start;

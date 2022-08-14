@@ -263,6 +263,11 @@ display: block;
   flex-direction: row;
 }
 
+#button-content{
+  bottom: 10%;
+  right: auto;
+}
+
 
 #container-content1{
   height: 100%;
@@ -286,7 +291,7 @@ display: block;
 #container-button{
   height: 100%;
   width: 100%;
-  display: block;
+  display: flex;
   justify-content: center;
   flex-direction: row;
   position: absolute;
@@ -536,6 +541,7 @@ svg {
   z-index: 3;
 }
 
+
 #sobre-content1{
   height: 100%;
   width: 100%;
@@ -547,8 +553,8 @@ svg {
 }
 
 .sobre-img{
-  width: 40%;
-  height: 20%;
+  width: 80%;
+  height: 40%;
 }
 
 .sobre-img img{
@@ -732,6 +738,15 @@ footer p{
   width: 80%;
 }
 
+#button-home{
+  display: flex;
+}
+
+#button-home span{
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ffffff;
+}
 
 
 
@@ -746,7 +761,7 @@ body::-webkit-scrollbar-track {
 @media (min-width: 400px) and (max-width: 1000px) {
 
   nav{
-    height: 200vh;
+    height: 120vh;
   }
 
   #header {
@@ -852,9 +867,7 @@ body::-webkit-scrollbar-track {
   }
 
   #container{
-    height: 50vh;
-    margin: 2vh 0;
-    display: none;
+    height: 60vh;
   }
   
   .container-container{
@@ -865,8 +878,19 @@ body::-webkit-scrollbar-track {
 
   }
 
-  #container-content1{
-    display: none;
+  #button-content{
+    bottom: 25%;
+    right: auto;
+  }
+
+  #container-button-top-text {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 
   #content-1{
@@ -878,11 +902,15 @@ body::-webkit-scrollbar-track {
     transition: all 0.2s ease-in-out;
     width: 25%;
   }
+
+  #sobre-content{
+    margin: 0;
+  }
   
   #content-card{
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     margin: auto;
@@ -993,6 +1021,10 @@ body::-webkit-scrollbar-track {
   #content {
     flex-direction: column;
     height: 100%;
+  }
+
+  .sobre-content{
+    margin: 0;
   }
 
   #content-meio{
