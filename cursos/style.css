@@ -623,7 +623,19 @@ body::-webkit-scrollbar-track {
 background: transparent;        /* color of the tracking area */
 }
 
-@media (min-width: 400px) and (max-width: 1000px) {
+
+@media (min-width: 700px) and (max-width: 1000px){
+
+    .top-content-meio p{
+        display: flex;
+    }
+    .content-top {
+        height: 300px;
+        width: 866px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
 
     nav{
       height: 280vh;
