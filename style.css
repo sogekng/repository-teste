@@ -851,6 +851,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.6rem;
   }
   
   .menu ul {
@@ -883,7 +884,7 @@ body::-webkit-scrollbar-track {
   
   .menu ul li a:hover,
   .menu ul li a:focus {
-    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
+      background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
   }
   
   .menu ul li:hover .dropdown{
@@ -899,7 +900,7 @@ body::-webkit-scrollbar-track {
   }
   
   .menu ul li a:focus {
-  color: rgba(255, 255, 255, .9);
+  color: white;
   }
   
   .menu ul li a:not(:only-child)::after {
@@ -908,18 +909,18 @@ body::-webkit-scrollbar-track {
   }
   
   .menu ul li ul li {
-    min-width: 100%;
-    height: 7vh;
+  min-width: 100%;
+  height: 7vh;
   }
   
   .menu ul li ul li a {
   background: #2e3033;
-  color: rgba(255, 255, 255, .9);
+  color: rgb(255, 255, 255);
   }
   
   .menu ul li ul li a:hover,
   .menu ul li ul li a:focus {
-    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
+  background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
   color: #2e3033;
   }
 
