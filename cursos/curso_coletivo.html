@@ -9,7 +9,7 @@
     <script src="../main.js"></script>
     <title id="title">Transp. Coletivo</title>
 </head>
-<body>
+<body id="home">
     <script>
       setTimeout(function(){
           document.getElementById('load').style.transition = 'all 1s';
@@ -24,10 +24,15 @@
   </div>
   <nav id="nav">
     <div id="header">
+      <div class="header-logo">
+          <a href="/index.html">
+              <img src="/imgs/LOGO.png" alt="">
+          </a>
+      </div>
       <div id="content-header">
-          <div class="menu">
+          <div class="menu" id="menu">
               <ul>
-                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="/index.html#home">Home</a></li>
                   <li>
                       <a>Cursos</a>
                       <ul class="dropdown">
@@ -50,8 +55,8 @@
                           </li>
                       </ul>
                   </li>
-                  <li><a href="../index.html#sobre">Sobre</a></li>
-                  <li><a href="../index.html#contato">Contato</a></li>
+                  <li><a href="/index.html#sobre">Sobre</a></li>
+                  <li><a href="/index.html#contato">Contato</a></li>
               </ul>
           </div>
       </div>
@@ -164,15 +169,16 @@
               <div class="col-md-12">
                   <div class="copyright-text">
                       <p id="footer_one_p">
-                          <span>&copy; 2020 Todos os direitos reservados.</span>
+                          <span>&copy; 2022 Todos os direitos reservados ao CFC.</span>
                       </p>
                   </div>
               </div>
           </div>
       </div>
-      <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
-      </p>
+      <div id="icones-footer">
+        <a href="https://www.instagram.com" target="blank"><img src="/imgs/instagram-icone.png" alt=""></a>
+        <a href="https://www.facebook.com" target="blank"><img src="/imgs/facebook-icone.png" alt=""></a>
+      </div>
   </footer>
   <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="../imgs/whatsapp.png" alt="icone"></a> 
   </nav>

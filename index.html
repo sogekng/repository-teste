@@ -323,15 +323,17 @@
                 <div class="col-md-12">
                     <div class="copyright-text">
                         <p id="footer_one_p">
-                            <span>&copy; 2020 Todos os direitos reservados.</span>
+                            <span>&copy; 2022 Todos os direitos reservados ao CFC.</span>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
-        </p>
+        <div id="icones-footer">
+            <a href="https://www.instagram.com" target="blank"><img src="/imgs/instagram-icone.png" alt=""></a>
+            <a href="https://www.facebook.com" target="blank"><img src="/imgs/facebook-icone.png" alt=""></a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" ><img src="../imgs/whatsapp.png" alt="icone"></a>
+        </div>
     </footer>
     <script>
         let lastKnownScrollPosition = 0;
@@ -344,11 +346,14 @@
 
         if(lastKnownScrollPosition < 2){
             document.getElementById('button-home').style.display = 'none';
-        }else{
+        }else if(lastKnownScrollPosition >= 320){
+            document.getElementById('button-home').style.display = 'none';
+        }
+        else{
             document.getElementById('button-home').style.display = 'flex';
         }
         });
     </script>
-    <a href="#home" id="button-home"><span class="material-symbols-outlined">arrow_circle_up</span></a> 
+    <a href="#home" id="button-home"><span class="material-symbols-outlined">arrow_circle_up</span></a>  
 </nav>
 </body>
