@@ -474,7 +474,7 @@ svg {
   border-top-right-radius: 10px;
   justify-content: center;
   flex-direction: row;
-  background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
+  background: #dca90e;
   margin: 2vh;
   justify-content: space-between;
   align-items: center;
