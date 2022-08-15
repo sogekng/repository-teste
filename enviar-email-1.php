@@ -38,7 +38,7 @@ try{
                     <tbody><tr>
                     </tr>
                     <tr>
-                        <td bgcolor="yellow" width="800" height="180" valign="middle" style="text-align:center">
+                        <td bgcolor="blue" width="800" height="180" valign="middle" style="text-align:center">
                             <div><span style="font-family:"Myriad Pro",Arial,sans-serif;font-size:38px;display:block">Confirmação de Envio de formulario<br></span></div>
                         </td>
                     </tr>
@@ -49,11 +49,11 @@ try{
                                     <td>
                                         <span style="font-family:"Myriad Pro",Arial,sans-serif;font-size:16px;color:#494949;display:block">
                                             
-                                            <span style="font-size:30px;display:block">Olá '.$from.' mais uma pessoa peencheu o formulario do curso</span>
+                                            <span style="font-size:30px;display:block">Olá '.$from.' Tem alguém com dúvida, veja o que ela escreveu</span>
                                             <br><span style="display:flex;align-items:center;font-size:1rem;">Seu Nome é '.$nome.'</span>
                                             <br><span style="display:flex;align-items:center;font-size:1rem;">Seu E-mail é '.$email.'</span>
                                             <br><span style="display:flex;align-items:center;font-size:1rem;">Seu Numero de telefone é '.$telefone.'</span>
-                                            <br><span style="display:flex;align-items:center;font-size:1rem;">Sua Mensagem é '.$mensagem.'</span>
+                                            <br><span style="display:flex;align-items:center;font-size:1rem;">Sua Mensagem é "'.$mensagem.'"</span>
                                             <br><span style="display:flex;align-items:center;font-size:1,2rem;"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=55'.$telefone.'">Entre em contanto com ele pelo o whatsapp</a></span>
                                         </span>
                                     </td>
