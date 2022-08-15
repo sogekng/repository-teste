@@ -293,6 +293,8 @@ background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214,
     flex-direction: row;
 }
 
+
+
 .content-top-content{
     display: flex;
     justify-content: start;
@@ -741,6 +743,13 @@ background: transparent;        /* color of the tracking area */
         width: 80%;
     }
 
+    .content-text-p-01 {
+        position: relative;
+        font-size: 1.3rem;
+        margin: auto;
+        width: 82%;
+    }
+    
     .content-text {
     display: flex;
     height: 100%;
