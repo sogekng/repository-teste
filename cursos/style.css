@@ -36,7 +36,7 @@ border-top-color: rgb(249, 205, 72);
 
 nav{
 background-color: #2e3033;
-height: 300vh;
+height: 245vh;
 width: 100vw;
 position: absolute;
 display: flex;
@@ -126,7 +126,7 @@ align-items: center;
 
 .menu ul li a:hover,
 .menu ul li a:focus {
-background: rgb(249, 205, 72);
+    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
 }
 
 .menu ul li:hover .dropdown{
@@ -161,7 +161,7 @@ color: rgb(255, 255, 255);
 
 .menu ul li ul li a:hover,
 .menu ul li ul li a:focus {
-background: rgb(249, 205, 72);
+    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
 color: #2e3033;
 }
 
@@ -181,14 +181,14 @@ top: 0;
 left: 100%;
 }
   
-  .dropdown-antt{
-  display: none;
-    position: absolute;
-    background: #2e3033;
-    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
-  top: 0;
-  left: 100%;
-  }
+.dropdown-antt{
+display: none;
+position: absolute;
+background: #2e3033;
+box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+top: 0;
+left: 100%;
+}
   
 
 #content{
@@ -209,7 +209,7 @@ margin-bottom: 1rem;
 }
 
 #content div{
-background-color:#f9cd48;
+    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
 }
 
 #content div p{
@@ -231,11 +231,11 @@ margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 40vh;
+    margin-top: 10vh;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgb(249, 205, 72);
+    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
     margin-bottom: 10vh;
     }
 
@@ -267,7 +267,7 @@ margin-bottom: 1rem;
     width: 100%;
     height: 100%;
     margin: auto 2vh;
-    background-color: #351c1c;
+    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
 }
 
 .top-content-top{
@@ -285,7 +285,7 @@ margin-bottom: 1rem;
     align-items: center;
     width: auto;
     height: auto;
-    margin-right: 1vh;
+    margin: 1vh;
     background-color: #01ca6c;
 }
 
@@ -303,7 +303,7 @@ margin-bottom: 1rem;
     align-items: center;
     width: auto;
     height: auto;
-    margin-right: 1vh;
+    margin: 1vh;
     background-color: #b85301;
 }
 
@@ -312,6 +312,15 @@ margin-bottom: 1rem;
     font-size: 0.8rem;
     font-weight: bold;
     margin: 1vh;
+}
+
+.top-content-meio{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
 }
 
 .content-top-content{
@@ -327,7 +336,7 @@ margin-bottom: 1rem;
     display: flex;
     height: 100%;
     width: 70%;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: center;
     z-index: 3;
@@ -534,10 +543,10 @@ body::-webkit-scrollbar-track {
 background: transparent;        /* color of the tracking area */
 }
 
-@media (min-width: 400px) and (max-width: 1200px) {
+@media (min-width: 400px) and (max-width: 1000px) {
 
     nav{
-      height: 275vh;
+      height: 225vh;
     }
     
     #header {
@@ -587,7 +596,7 @@ background: transparent;        /* color of the tracking area */
     
     .menu ul li a:hover,
     .menu ul li a:focus {
-    background: rgb(249, 205, 72);
+        background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
     }
     
     .menu ul li:hover .dropdown{
@@ -623,7 +632,7 @@ background: transparent;        /* color of the tracking area */
     
     .menu ul li ul li a:hover,
     .menu ul li ul li a:focus {
-    background: rgb(249, 205, 72);
+    background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
     color: #2e3033;
     }
 
@@ -653,6 +662,26 @@ background: transparent;        /* color of the tracking area */
     display: flex;
     height: 100%;
     width: 100%;
+    }
+
+    .content-top {
+        height: 12vh;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2vh;
+        z-index: 1;
+        margin: 5vh auto;
+        background-color: #2e3033;
+    }
+
+    .content-top-img{
+        width: 45%;
+    }
+
+    .top-content-meio{
+        display: none;
     }
   
     #content-form {

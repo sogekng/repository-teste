@@ -449,7 +449,7 @@ svg {
 
 #content-b{
   position: absolute;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -740,6 +740,7 @@ footer p{
 
 #button-home{
   display: flex;
+  position: fixed; height: 45px; width: 45px; border-radius: 50px; bottom: 10px; align-items: center; display: none; right: 10px; z-index: 5; justify-content: center; margin: auto; text-align: center; text-decoration: none; color: rgb(255, 255, 255);
 }
 
 #button-home span{
@@ -1036,10 +1037,6 @@ body::-webkit-scrollbar-track {
     flex-direction: column;
   }
 
-  #content-b{
-    top: 85vh;
-  }
-
   .content-contato{
     display:  none;
   }
@@ -1067,6 +1064,16 @@ body::-webkit-scrollbar-track {
     height: 50%;
     width: 70%;
     padding: 5vh;
+  }
+
+  #content-1{
+    transition: all 0.2s ease-in-out;
+    width: 40%;
+  }
+  
+  #content-2{
+    transition: all 0.2s ease-in-out;
+    width: 40%;
   }
 
   .content-text-p {
@@ -1102,9 +1109,14 @@ body::-webkit-scrollbar-track {
     display: none;
   }
 
+  #button-home{
+    display: none;
+  }
+
   footer{
     margin-top: auto;
     height: 20vh;
+    padding: 2vh 0;
   }
 }
 
