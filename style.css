@@ -763,7 +763,7 @@ footer p{
 
 #button-home{
   display: flex;
-  position: fixed; height: 45px; width: 45px; border-radius: 50px; bottom: 20px; align-items: center; display: none; right: 10px; z-index: 5; justify-content: center; margin: auto; text-align: center; text-decoration: none; color: rgb(255, 255, 255);
+  position: fixed; height: 45px; width: 45px; border-radius: 50px; bottom: 0; align-items: center; display: none; right: 0; z-index: 5; justify-content: center; margin: auto; text-align: center; text-decoration: none; color: rgb(255, 255, 255);
 }
 
 #button-home span{

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <script src="../main.js"></script>
     <title id="title">Transp. Coletivo</title>
@@ -68,20 +69,20 @@
         </div>
         <div class="content-top-content" style="justify-content: start;">
           <div class="top-content-top">
-            <div class="box-1"><p>8 Modulos</p></div>
-            <div class="box-2"><p>Detran</p></div>
+            <div class="box-1"><p>8 Módulos</p></div>
+            <div class="box-2"><p>DENATRAN</p></div>
           </div>
           <div class="top-content-meio">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit obcaecati, natus temporibus laudantium ipsam dolor qui officiis tenetur quasi reprehenderit repellat itaque nam eligendi tempore velit, doloribus, distinctio unde quod?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem! Suscipit reiciendis consectetur nesciunt excepturi in tenetur, molestias at. Vero quas esse officiis libero error cumque voluptatibus rerum ut officia.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur animi cumque iste, vero praesentium nostrum eveniet nemo voluptate rerum a cupiditate. Eos, nam? Porro quod reprehenderit dolorum a asperiores!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias rerum doloremque officiis perferendis qui, molestiae id voluptatem debitis velit tenetur doloribus ipsum reiciendis labore quaerat ullam perspiciatis cum. Vel, nemo.</p>
+            <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm()">Assinar</button>
           </div>
         </div>
       </div>
       <div class="content-text">
         <div class="content-text-title">
-          <h1>Curso -  Transporte Coletivo </h1><span class="material-symbols-outlined">task_alt</span> <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm()">Assinar</button>
+          <h1>Curso -  Transporte Coletivo </h1><span class="material-symbols-outlined">task_alt</span> 
         </div>
         <div class="content-text-p">
           <div class="content-text-p-01">
@@ -163,6 +164,7 @@
           </div>
           <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:rgb(249, 205, 72);color:#2e3033;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:1vh auto;text-decoration:none;" onclick="">Enviar</button>
       </form>
+    </div> 
     <footer id="footer">
       <div class="container_footer">
           <div class="row">
@@ -178,9 +180,27 @@
       <div id="icones-footer">
         <a href="https://www.instagram.com" target="blank"><img src="/imgs/instagram-icone.png" alt=""></a>
         <a href="https://www.facebook.com" target="blank"><img src="/imgs/facebook-icone.png" alt=""></a>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" ><img src="../imgs/whatsapp.png" alt="icone"></a>
       </div>
-  </footer>
-  <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="../imgs/whatsapp.png" alt="icone"></a> 
+    </footer>
+    <script>
+      let lastKnownScrollPosition = 0;
+      let ticking = false;
+
+      document.addEventListener('scroll', (e) => {
+      lastKnownScrollPosition = window.scrollY;
+
+      console.log(lastKnownScrollPosition)
+
+      if(lastKnownScrollPosition < 2){
+          document.getElementById('button-home').style.display = 'none';
+      }
+      else{
+          document.getElementById('button-home').style.display = 'flex';
+      }
+      });
+  </script>
+  <a href="#home" id="button-home"><span class="material-symbols-outlined">arrow_circle_up</span></a>
   </nav>
 </body>
 </html>

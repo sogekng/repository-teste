@@ -8,161 +8,198 @@
     <link rel="stylesheet" href="style.css">
     <script src="../main.js"></script>
     <title id="title">Transp. Emergencial</title>
-  </head>
-  <body>
-      <script>
-        setTimeout(function(){
-            document.getElementById('load').style.transition = 'all 1s';
-            document.getElementById('load').style.opacity = '0';
-            document.getElementById('nav').style.display = 'flex';
-            document.getElementById('load').style.display = 'none';
-        
-        }, 2000);
-    </script>
-    <div id="load">
-        <div class="box-load"></div>
-    </div>
-    <nav id="nav">
-      <div id="header">
-        <div id="content-header">
-            <div class="menu">
-              <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li>
-                    <a>Cursos</a>
-                    <ul class="dropdown">
-                        <li>
-                            <a>Detran</a>
-                            <ul class="dropdown-detran">
-                                <li><a href="curso_coletivo.html">Transporte Coletivo</a></li>
-                                <li><a href="curso_emergencial.html">Transporte Emergencial</a></li>
-                                <li><a href="curso_escolar.html">Transporte Escolar</a></li>
-                                <li><a href="curso_indivisivel.html">Transporte Indivisível</a></li>
-                                <li><a href="curso_mopp.html">Transporte MOPP</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>ANTT</a>
-                            <ul class="dropdown-antt">
-                                <li><a href="curso_rt.html">RT</a></li>
-                                <li><a href="curso_tac.html">TAC</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="../index.html#sobre">Sobre</a></li>
-                <li><a href="../index.html#contato">Contato</a></li>
-            </ul>
-            </div>
-        </div>
+</head>
+<body id="home">
+    <script>
+      setTimeout(function(){
+          document.getElementById('load').style.transition = 'all 1s';
+          document.getElementById('load').style.opacity = '0';
+          document.getElementById('nav').style.display = 'flex';
+          document.getElementById('load').style.display = 'none';
+      
+      }, 1500);
+  </script>
+  <div id="load">
+      <div class="box-load"></div>
+  </div>
+  <nav id="nav">
+    <div id="header">
+      <div class="header-logo">
+          <a href="/index.html">
+              <img src="/imgs/LOGO.png" alt="">
+          </a>
       </div>
-      <div id="content-logo">
-        <div class="content-logo-img">
+      <div id="content-header">
+          <div class="menu" id="menu">
+              <ul>
+                  <li><a href="/index.html#home">Home</a></li>
+                  <li>
+                      <a>Cursos</a>
+                      <ul class="dropdown">
+                          <li>
+                              <a>Detran</a>
+                              <ul class="dropdown-detran">
+                                  <li><a href="curso_coletivo.html">Transporte Coletivo</a></li>
+                                  <li><a href="curso_emergencial.html">Transporte Emergencial</a></li>
+                                  <li><a href="curso_escolar.html">Transporte Escolar</a></li>
+                                  <li><a href="curso_indivisivel.html">Transporte Indivisível</a></li>
+                                  <li><a href="curso_mopp.html">Transporte MOPP</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a>ANTT</a>
+                              <ul class="dropdown-antt">
+                                  <li><a href="curso_rt.html">RT</a></li>
+                                  <li><a href="curso_tac.html">TAC</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><a href="/index.html#sobre">Sobre</a></li>
+                  <li><a href="/index.html#contato">Contato</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div id="content-meio">
+      <div class="content-top">
+        <div class="content-top-img">
           <img src="../imgs/emergencias.jpg" alt="">
         </div>
+        <div class="content-top-content" style="justify-content: start;">
+          <div class="top-content-top">
+            <div class="box-1"><p>7 Módulos</p></div>
+            <div class="box-2"><p>DENATRAN</p></div>
+          </div>
+          <div class="top-content-meio">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit obcaecati, natus temporibus laudantium ipsam dolor qui officiis tenetur quasi reprehenderit repellat itaque nam eligendi tempore velit, doloribus, distinctio unde quod?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorem! Suscipit reiciendis consectetur nesciunt excepturi in tenetur, molestias at. Vero quas esse officiis libero error cumque voluptatibus rerum ut officia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur animi cumque iste, vero praesentium nostrum eveniet nemo voluptate rerum a cupiditate. Eos, nam? Porro quod reprehenderit dolorum a asperiores!</p>
+            <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm()">Assinar</button>
+          </div>
+        </div>
       </div>
-      <div id="content-meio">
-        <div class="content-text">
-          <div class="content-text-title">
-            <h1>Curso -  Transp. Emergencial </h1><span class="material-symbols-outlined">task_alt</span> <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm()">Assinar</button>
+      <div class="content-text">
+        <div class="content-text-title">
+          <h1>Curso -  Transporte Emergencial </h1><span class="material-symbols-outlined">task_alt</span> 
+        </div>
+        <div class="content-text-p">
+          <div class="content-text-p-01">
+            <div class="content-text-p-01-title">
+              <span class="material-symbols-outlined">inventory</span><h1>Objetivo</h1>
+            </div>
+            <p>Este curso tem por objetivo, capacitar os participantes a conduzir veículos rodoviários de Transporte Coletivo de Passageiros com segurança, de maneira a preservar a integridade física de seus ocupantes e dos demais envolvidos no trânsito.</p>
           </div>
-          <div class="content-text-p">
-            <div class="content-text-p-01">
-              <div class="content-text-p-01-title">
-                <span class="material-symbols-outlined">inventory</span><h1>Objetivo</h1>
-              </div>
-              <p>Este curso tem por objetivo, capacitar os participantes a conduzir veículos rodoviários de Transporte Coletivo de Passageiros com segurança, de maneira a preservar a integridade física de seus ocupantes e dos demais envolvidos no trânsito.</p>
+          <div class="content-text-p-01">
+            <div class="content-text-p-01-title">
+              <span class="material-symbols-outlined">assignment</span><h1>Requisitos</h1>
             </div>
-            <div class="content-text-p-01">
-              <div class="content-text-p-01-title">
-                <span class="material-symbols-outlined">assignment</span><h1>Requisitos</h1>
-              </div>
-              <p>
-                Ser maior de 21 anos
-                Estar habilitado em uma das categorias “D” ou “E”
-                Possuir CNH do estado de São Paulo
-                Não ter cometido nenhuma infração grave ou gravíssima ou ser reincidente em
-                infrações médias durante os últimos doze meses
-                Não estar cumprindo pena de suspensão do direito de dirigir, cassação da Carteira
-                Nacional de Habilitação – CNH, pena decorrente de crime de trânsito, bem como não estar impedido judicialmente de exercer seus direitos
-              </p>
+            <p>
+              Ser maior de 21 anos
+              Estar habilitado em uma das categorias “D” ou “E”
+              Possuir CNH do estado de São Paulo
+              Não ter cometido nenhuma infração grave ou gravíssima ou ser reincidente em
+              infrações médias durante os últimos doze meses
+              Não estar cumprindo pena de suspensão do direito de dirigir, cassação da Carteira
+              Nacional de Habilitação – CNH, pena decorrente de crime de trânsito, bem como não estar impedido judicialmente de exercer seus direitos
+            </p>
+          </div>
+          <div class="content-text-p-01">
+            <div class="content-text-p-01-title">
+              <span class="material-symbols-outlined">description</span><h1>Documentos</h1>
             </div>
-            <div class="content-text-p-01">
-              <div class="content-text-p-01-title">
-                <span class="material-symbols-outlined">description</span><h1>Documentos</h1>
-              </div>
-              <p>
-                Cópia da CNH (CARTEIRA NACIONAL DE HABILITAÇÃO) ampliada 130% na folha A4.
-                01 (uma) foto 2X2 colorida
-                Certidão do prontuário da CNH solicitado no site do DETRAN/SP ou no Poupatempo (Fins de direito)
-                Certidão de distribuição criminal no site do Tribunal de Justiça de São Paulo ou no Fórum criminal de origem da CNH (em São Paulo – Fórum João Mendes ou Fórum criminal da Barra Funda).
-              </p>
+            <p>
+              Cópia da CNH (CARTEIRA NACIONAL DE HABILITAÇÃO) ampliada 130% na folha A4.
+              01 (uma) foto 2X2 colorida
+              Certidão do prontuário da CNH solicitado no site do DETRAN/SP ou no Poupatempo (Fins de direito)
+              Certidão de distribuição criminal no site do Tribunal de Justiça de São Paulo ou no Fórum criminal de origem da CNH (em São Paulo – Fórum João Mendes ou Fórum criminal da Barra Funda).
+            </p>
+          </div>
+          <div class="content-text-p-01">
+            <div class="content-text-p-01-title">
+              <span class="material-symbols-outlined">calendar_month</span><h1>Dias de curso</h1>
             </div>
-            <div class="content-text-p-01">
-              <div class="content-text-p-01-title">
-                <span class="material-symbols-outlined">calendar_month</span><h1>Dias de curso</h1>
-              </div>
-              <p>
-                Dez dias de segunda a sexta
-                Manhã: das 07:00 as 11:35hs
-                Noite: das 18:00 as 22:35
-              </p>
-            </div>
+            <p>
+              Dez dias de segunda a sexta
+              Manhã: das 07:00 as 11:35hs
+              Noite: das 18:00 as 22:35
+            </p>
           </div>
         </div>
-        <form id="content-form" action="../enviar-email.php" id="form" method="POST">
-          <div class="content-form-title">
-            <h1>Peencha os dados</h1>
-            <p onclick="closeForm()">X</p>
-          </div>
-            <div class="omrs-input-group">
-                <label class="omrs-input-underlined">
-                    <input type="text" name="nome" required>
-                    <span class="omrs-input-label">Nome</span>
-                </label>
-            </div>
-            <div class="omrs-input-group">
-                <label class="omrs-input-underlined">
-                    <input type="email" name="email" required>
-                    <span class="omrs-input-label">E-mail</span>
-                </label>
-            </div>
-            <div class="omrs-input-group">
-                <label class="omrs-input-underlined">
-                    <input type="text" name="telefone" required>
-                    <span class="omrs-input-label">Telefone</span>
-                </label>
-            </div>
-            <div class="form-group">
-              <select name="curso" id="appearance-select">
-                <option value="Transporte Coletivo">Transporte Coletivo</option>
-                <option value="Transporte Emergencial" selected>Transporte Emergencial</option>
-                <option value="Transporte Escolar">Transporte Escolar</option>
-                <option value="Transporte Indivisivel">Transporte Indivisivel</option>
-                <option value="Transporte Cargas Perigosas">Transporte Cargas Perigosas - MOPP</option>
-                <option value="Responsavel Tecnico">Responsavel Tecnico - RT</option>
-                <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas - TAC</option>
-              </select>
-            </div>
-            <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:rgb(249, 205, 72);color:#2e3033;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:1vh auto;text-decoration:none;" onclick="">Enviar</button>
-        </form>
-      <footer id="footer">
-        <div class="container_footer">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright-text">
-                        <p id="footer_one_p">
-                            <span>&copy; 2020 Todos os direitos reservados.</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <form id="content-form" action="../enviar-email.php" id="form" method="POST">
+        <div class="content-form-title">
+          <h1>Peencha os dados</h1>
+          <p onclick="closeForm()">X</p>
         </div>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nobis, vel illo vitae incidunt ducimus ut neque hic animi nam excepturi quam voluptatibus necessitatibus natus quos totam qui veritatis eligendi.
-        </p>
+          <div class="omrs-input-group">
+              <label class="omrs-input-underlined">
+                  <input type="text" name="nome" required>
+                  <span class="omrs-input-label">Nome</span>
+              </label>
+          </div>
+          <div class="omrs-input-group">
+              <label class="omrs-input-underlined">
+                  <input type="email" name="email" required>
+                  <span class="omrs-input-label">E-mail</span>
+              </label>
+          </div>
+          <div class="omrs-input-group">
+              <label class="omrs-input-underlined">
+                  <input type="text" name="telefone" required>
+                  <span class="omrs-input-label">Telefone</span>
+              </label>
+          </div>
+          <div class="form-group">
+            <select name="curso" id="appearance-select">
+              <option value="Transporte Coletivo">Transporte Coletivo</option>
+              <option value="Transporte Emergencial" selected>Transporte Emergencial</option>
+              <option value="Transporte Escolar">Transporte Escolar</option>
+              <option value="Transporte Indivisivel">Transporte Indivisivel</option>
+              <option value="Transporte Cargas Perigosas">Transporte Cargas Perigosas - MOPP</option>
+              <option value="Responsavel Tecnico">Responsavel Tecnico - RT</option>
+              <option value="Transporte Autônomo de Cargas">Transporte Autônomo de Cargas - TAC</option>
+            </select>
+          </div>
+          <button id="submit" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:rgb(249, 205, 72);color:#2e3033;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:40px;cursor:pointer;text-align:center;margin:1vh auto;text-decoration:none;" onclick="">Enviar</button>
+      </form>
+    </div> 
+    <footer id="footer">
+      <div class="container_footer">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="copyright-text">
+                      <p id="footer_one_p">
+                          <span>&copy; 2022 Todos os direitos reservados ao CFC.</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="icones-footer">
+        <a href="https://www.instagram.com" target="blank"><img src="/imgs/instagram-icone.png" alt=""></a>
+        <a href="https://www.facebook.com" target="blank"><img src="/imgs/facebook-icone.png" alt=""></a>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" ><img src="../imgs/whatsapp.png" alt="icone"></a>
+      </div>
     </footer>
-    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" id="icone"><img src="../imgs/whatsapp.png" alt="icone"></a> 
-    </nav>
-  </body>
-  </html>
+    <script>
+      let lastKnownScrollPosition = 0;
+      let ticking = false;
+
+      document.addEventListener('scroll', (e) => {
+      lastKnownScrollPosition = window.scrollY;
+
+      console.log(lastKnownScrollPosition)
+
+      if(lastKnownScrollPosition < 2){
+          document.getElementById('button-home').style.display = 'none';
+      }
+      else{
+          document.getElementById('button-home').style.display = 'flex';
+      }
+      });
+  </script>
+  <a href="#home" id="button-home"><span class="material-symbols-outlined">arrow_circle_up</span></a>
+  </nav>
+</body>
+</html>
