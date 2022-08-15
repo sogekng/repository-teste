@@ -246,6 +246,13 @@ display: block;
   background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
 }
 
+#button-content{
+  bottom: 25%;
+  right: auto;
+  width: 200px;
+  height: 50px;
+}
+
   
 #container {
   position: relative;
@@ -264,11 +271,6 @@ display: block;
   display: flex;
   justify-content: center;
   flex-direction: row;
-}
-
-#button-content{
-  bottom: 10%;
-  right: auto;
 }
 
 
@@ -906,6 +908,8 @@ body::-webkit-scrollbar-track {
   #button-content{
     bottom: 25%;
     right: auto;
+    width: 130px;
+    height: 40px;
   }
 
   #container-button-top-text {
