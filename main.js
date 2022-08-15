@@ -25,14 +25,14 @@ function sobre(num){
 }
 
 
-function openForm(){
-  var form = document.getElementById('content-form');
+function openForm(id){
+  var form = document.getElementById(id);
 
   form.style.display = 'flex';
 }
 
-function closeForm(){
-  var form = document.getElementById('content-form');
+function closeForm(id){
+  var form = document.getElementById(id);
 
   form.style.transition = 'all 0.5s';
   form.style.display = 'none';

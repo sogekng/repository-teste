@@ -273,19 +273,22 @@
             <div class="content-contato" id="contato">
                 <div id="contato-content">
                     <div class="contato-text">
-                        <div style="height:100%;width:100%;">
-                            <img src="imgs/logo-suporte.png" alt="" style="max-height:100%;max-width:100%;">
-                        </div>
+                        <img id="contato-img" src="imgs/logo-suporte.png" alt="">
                         <p>
-                            Entre em contato conosco preenchendo o formulário ou clicando no link para redirecionar para o nosso whatsapp
+                            Clique no link abaixo para entrar em contato conosco
                         </p>
-                        <a href="https://api.whatsapp.com/send/?phone=5511986333241&text=Ola, eu tenho uma dúvida" id="icone" target="_blank" style="display:flex;position:relative;margin:auto;">
-                            <img src="imgs/whatsapp.png" alt="icone">
-                            <p>Entre em contato conosco</p>
+                        <a id="icone" href="http://api.whatsapp.com/send?1=pt_BR&phone=5511956182296&text=Olá gostaria de tirar minhas dúvidas" target="blank">
+                            <img id="icone-img" href="" src="imgs/whatsapp.png" alt="icone">
+                            <p>Entre em contato pelo o whatsapp</p>
+                        </a>
+                        <a id="icone2" onclick="openForm('contato-form')">
+                            <!--<img id="icone-img" src="imgs/whatsapp.png" alt="icone">-->
+                            <p>Preencha o formulário</p>
                         </a>
                     </div>
-                    <form action="enviar-email-1.php" class="contato-form" method="POST">
+                    <form action="enviar-email-1.php" id="contato-form" method="POST">
                         <h1>Mande sua Dúvida</h1>
+                        <p id="close" onclick="closeForm('contato-form')">X</p>
                         <div class="omrs-input-group">
                             <label class="omrs-input-underlined">
                                 <input name="nome" required>
@@ -331,9 +334,8 @@
             </div>
         </div>
         <div id="icones-footer">
-            <a href="https://www.instagram.com" target="blank"><img src="imgs/instagram-icone.png" alt=""></a>
-            <a href="https://www.facebook.com" target="blank"><img src="imgs/facebook-icone.png" alt=""></a>
-            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511986333241" ><img src="imgs/whatsapp.png" alt="icone"></a>
+            <a href="https://www.instagram.com/cfcatransitar/" target="blank"><img src="imgs/instagram-icone.png" alt=""></a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511956182296&text=Olá gostaria de tirar minhas dúvidas" ><img src="imgs/whatsapp.png" alt="icone"></a>
         </div>
     </footer>
     <script>
