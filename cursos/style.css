@@ -352,7 +352,7 @@ background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214,
 
 .top-content-meio{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -749,7 +749,7 @@ background: transparent;        /* color of the tracking area */
         margin: auto;
         width: 82%;
     }
-    
+
     .content-text {
     display: flex;
     height: 100%;
@@ -795,6 +795,10 @@ background: transparent;        /* color of the tracking area */
     }
 
     .top-content-meio{
+        display: flex;
+    }
+
+    .top-content-meio p{
         display: none;
     }
   
@@ -835,8 +839,13 @@ background: transparent;        /* color of the tracking area */
     width: 100%;
     }
 
+    #icones-footer{
+        display: flex;
+        justify-content: start;
+    }
+
     .container_footer {
-        width: 50%;
+        width: 40%;
     }
     footer{
     margin-top: auto;

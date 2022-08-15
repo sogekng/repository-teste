@@ -1131,14 +1131,19 @@ body::-webkit-scrollbar-track {
     width: 100%;
   }
 
+  #icones-footer{
+    display: flex;
+    justify-content: start;
+  }
+
+  .container_footer {
+      width: 40%;
+  }
+
   footer{
     margin-top: auto;
     height: 20vh;
     padding: 2vh 0;
-  }
-
-  .container_footer{
-    width: 60%;
   }
 }
 
