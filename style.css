@@ -762,7 +762,7 @@ body::-webkit-scrollbar-track {
 @media (min-width: 400px) and (max-width: 1000px) {
 
   nav{
-    height: 120vh;
+    height: 135vh;
   }
 
   #header {
