@@ -1102,8 +1102,8 @@ body::-webkit-scrollbar-track {
 
   .content-text-p {
     width: 70%;
-    height: 70%;
-    padding: 100px 20px;
+    height: 85%;
+    padding: 70px 20px;
   }
 
   #form div input {
@@ -1135,6 +1135,10 @@ body::-webkit-scrollbar-track {
     margin-top: auto;
     height: 20vh;
     padding: 2vh 0;
+  }
+
+  .container_footer{
+    width: 60%;
   }
 }
 
