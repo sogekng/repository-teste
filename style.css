@@ -636,7 +636,7 @@ svg {
 }
 
 .contato-form{
-  height: 60%;
+  height: 70%;
   width: 35%;
   padding: 5vh;
   display: flex;
@@ -1149,6 +1149,19 @@ body::-webkit-scrollbar-track {
     height: 20vh;
     padding: 2vh 0;
   }
+
+  .omrs-input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 90%;
+    margin: 1vh auto;
+  }
+
+  .omrs-input-group textarea {
+    width: 90%;
+    height: 2rem;
+    padding: 2vh;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
@@ -1204,7 +1217,7 @@ div.omrs-input-group {
 }
 
 .omrs-input-group textarea{
-  width: 235px;
+  margin: auto;
   height: 60px;
 }
 
