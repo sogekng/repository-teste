@@ -421,8 +421,8 @@ background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214,
     flex-direction: column;
     align-items: center;
     background-color: #2e3033;
-    height: 50%;
-    width: 30%;
+    height: 65%;
+    width: 40%;
     padding: 5vh;
     margin: auto;
     top: 0;
@@ -623,23 +623,23 @@ body::-webkit-scrollbar-track {
 background: transparent;        /* color of the tracking area */
 }
 
-
-@media (min-width: 700px) and (max-width: 1000px){
-
-    .content-text-p {
-        padding: 100px 20px;
-    }
-
-    .top-content-meio p{
-        display: flex;
-    }
-    .content-top {
-        height: 300px;
-        width: 866px;
+@media (min-width: 200px) and (max-width: 800px) {
+    #content-form {
+        height: 50%;
+        width: 60%;
+        padding: 5vh;
     }
 }
 
-@media (min-width: 200px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 500px) {
+    #content-form {
+        height: 47%;
+        width: 75%;
+        padding: 5vh;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 1000px) {
 
     nav{
       height: 280vh;
@@ -752,6 +752,18 @@ background: transparent;        /* color of the tracking area */
     color: #2e3033;
     }
 
+    .content-text-p {
+        padding: 100px 20px;
+    }
+
+    .top-content-meio p{
+        display: flex;
+    }
+    .content-top {
+        height: 300px;
+        width: 866px;
+    }
+
     #content-meio {
         height: 100%;
     }
@@ -819,11 +831,6 @@ background: transparent;        /* color of the tracking area */
         display: none;
     }
   
-    #content-form {
-        height: 50%;
-        width: 70%;
-        padding: 5vh;
-    }
 
     .content-text-p {
         width: 70%;
@@ -876,19 +883,6 @@ background: transparent;        /* color of the tracking area */
     }
   }
 
-
-  #content-form{
-    height: 50%;
-    width: 30%;
-    padding: 5vh;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    color: rgba(255, 255, 255, .9);
-    background-color: #2e3033;
-    transition: all 0.4s ease-in-out;
-  }
   @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
   * {
       font-family: "Roboto";

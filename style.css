@@ -784,7 +784,7 @@ body::-webkit-scrollbar-track {
   background: transparent;        /* color of the tracking area */
 }
 
-@media (min-width: 400px) and (max-width: 1000px) {
+@media (min-width: 400px) and (max-width: 700px) {
 
   nav{
     height: 135vh;
@@ -1161,6 +1161,12 @@ body::-webkit-scrollbar-track {
     width: 90%;
     height: 2rem;
     padding: 2vh;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .omrs-input-group {
+    font-size: 16px;
   }
 }
 
