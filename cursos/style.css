@@ -499,6 +499,10 @@ border: none;
     text-decoration: none;
 }
 
+.form-group{
+    margin: 0 auto;
+}
+
 #appearance-select {
     appearance: none;
     background-color: white;
