@@ -38,7 +38,7 @@ try{
                     <tbody><tr>
                     </tr>
                     <tr>
-                        <td bgcolor="blue" width="800" height="180" valign="middle" style="text-align:center">
+                        <td bgcolor="blue" width="800" height="180" valign="middle" style="text-align:center;color:white;">
                             <div><span style="font-family:"Myriad Pro",Arial,sans-serif;font-size:38px;display:block">Confirmação de Envio de formulario<br></span></div>
                         </td>
                     </tr>

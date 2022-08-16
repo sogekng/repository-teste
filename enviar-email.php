@@ -31,10 +31,9 @@ try{
     $mail->addAddress($from);
 
     $mail->isHTML(true);
-    $mail->Subject = 'Cursos    ';
+    $mail->Subject = 'Cursos';
     $mail->Body    = 
-        '
-        <table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
+        '<table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
             <tbody><tr>
                 <td align="center" valign="middle">
                     <font align="center" color="#0" face="Verdana, Arial, sans-serif" size="1" style="padding-bottom:5px;display:block;line-height:16px"></font>
