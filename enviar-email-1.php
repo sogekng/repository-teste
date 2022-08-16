@@ -29,7 +29,7 @@ try{
     $mail->addAddress('gutsantos3@gmail.com');
 
     $mail->isHTML(true);
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Duvidas';
     $mail->Body    = '<table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
         <tbody><tr>
             <td align="center" valign="middle">

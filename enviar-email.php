@@ -31,7 +31,7 @@ try{
     $mail->addAddress($from);
 
     $mail->isHTML(true);
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Cursos    ';
     $mail->Body    = 
         '
         <table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
