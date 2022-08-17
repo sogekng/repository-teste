@@ -612,7 +612,7 @@ svg {
 }
 
 .content-contato{
-  height: 60vh;
+  height: 100%;
   width: 100%;
   display: none;
   justify-content: center;
@@ -665,7 +665,7 @@ svg {
 }
 
 #contato-form{
-  height: 70%;
+  height: 80%;
   width: 40%;
   position: relative;
   padding: 5vh;
