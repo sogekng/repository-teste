@@ -248,7 +248,7 @@ display: block;
 }
 
 #button-content{
-  bottom: 25%;
+  bottom: 15%;
   right: auto;
   width: 200px;
   height: 50px;
@@ -258,7 +258,7 @@ display: block;
   
 #container {
   position: relative;
-  height: 90vh;
+  height: 120vh;
   width: 100%;
   display: block;
   justify-content: center;
