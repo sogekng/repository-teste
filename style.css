@@ -942,7 +942,7 @@ body::-webkit-scrollbar-track {
   }
 
   #container{
-    height: 60vh;
+    height: 90vh;
   }
   
   .container-container{
@@ -1526,4 +1526,23 @@ div.omrs-input-group {
 
 #slide7:checked ~ .s1{
   margin-left: -85.71428571428571%;
+}
+
+.input{
+  font-family: "PT Mono",monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  color: #2a2426;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  border: 2px solid #988c77;
+  background: transparent;
+  margin-bottom: 1em;
+}
+
+.omrs-input-group textarea{
+  height: 100px;
+  width: 80%;
+  padding: 10px;
 }

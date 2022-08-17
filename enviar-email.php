@@ -66,13 +66,13 @@ try{
                         </tr>
                     </tbody></table>
                 </td>
-            </tr>
-        </tbody></table>
-        </body>';
+                </tr>
+            </tbody>
+        </table>';
 
+    echo '<script>window.location.href="index.html"</script>';
     $mail->send();
-    header('Location: index.html');
-    
+
     if($mail->send() == true){
         echo '<script>alert("Email enviado com sucesso!");</script>';
     }else{ 

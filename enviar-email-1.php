@@ -30,7 +30,8 @@ try{
 
     $mail->isHTML(true);
     $mail->Subject = 'Duvidas';
-    $mail->Body    = '<table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
+    $mail->Body    = 
+    '<table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
         <tbody><tr>
             <td align="center" valign="middle">
                 <font align="center" color="#0" face="Verdana, Arial, sans-serif" size="1" style="padding-bottom:5px;display:block;line-height:16px"></font>
@@ -63,22 +64,18 @@ try{
                     </tr>
                 </tbody></table>
             </td>
-        </tr>
-    </tbody></table>
-    </body>';
+            </tr>
+        </tbody>
+    </table>';
 
-if($nome == '' || $email == '' || $telefone == '' || $mensagem == ''){
-    echo '<script>window.location.replace("index.html");</script>';
-    echo '<script>alert("Campos vazios!");</script>';
-} else {
-    if($mail->send()){
-        echo '<script>window.location.replace("index.html");</script>';
+    echo '<script>window.location.href="index.html"</script>';
+    $mail->send();
+
+    if($mail->send() == true){
         echo '<script>alert("Email enviado com sucesso!");</script>';
     }else{ 
-        echo '<script>window.location.replace("index.html");</script>';
         echo '<script>alert("Erro ao enviar email!");</script>';
     }
-}
 
 }catch(Exception $e){ 
 echo "Erro ao enviar o email. Erro: {$mail->ErrorInfo}";
