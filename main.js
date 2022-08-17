@@ -77,13 +77,13 @@ function mudarContentSobre(){
   document.getElementById('container-button-top5').style.color = 'rgba(255, 255, 255, .9)';
   document.getElementById('container-button-top6').style.color = 'rgba(255, 255, 255, .9)';
   document.getElementById('container-button-top7').style.color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content1').color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content2').color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content3').color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content4').color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content5').color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content6').color = 'rgba(255, 255, 255, .9)';
-  document.getElementById('button-content7').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content1').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content2').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content3').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content4').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content5').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content6').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content7').style.color = 'rgba(255, 255, 255, .9)';
 
   
 }
