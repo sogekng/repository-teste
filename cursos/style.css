@@ -646,7 +646,7 @@ background: transparent;        /* color of the tracking area */
 @media (min-width: 200px) and (max-width: 1000px) {
 
     nav{
-      height: 280vh;
+      height: 320vh;
     }
     
     #header {
