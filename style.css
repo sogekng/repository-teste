@@ -44,7 +44,7 @@ body {
 }
 
 nav{
-  background-color: #2e3033;
+  background-color: rgb(249, 205, 72);
   height: 200vh;
   width: 100vw;
   position: absolute;
@@ -94,6 +94,7 @@ nav{
   justify-content: center;
   flex-direction: row;
   z-index: 4;
+  background-color: #2e3033;
 }
 
 #header:after{
@@ -294,7 +295,13 @@ display: block;
   background: linear-gradient(rgba(0, 0, 0, 0.233)70%, rgb(0, 0, 0)100%);
 }
 
-#container-button{
+#container-button1,
+#container-button2,
+#container-button3,
+#container-button4,
+#container-button5,
+#container-button6,
+#container-button7{
   height: 100%;
   width: 100%;
   display: flex;
@@ -440,6 +447,7 @@ svg {
   flex-direction: column;
   background-color: transparent;
   z-index: 2;
+  margin-top: 10vh;
 }
 
 .content-content-meio{
@@ -474,7 +482,7 @@ svg {
   border-top-right-radius: 10px;
   justify-content: center;
   flex-direction: row;
-  background: #dca90e;
+  background: rgb(249, 205, 72);
   margin: 2vh;
   justify-content: space-between;
   align-items: center;
@@ -542,7 +550,7 @@ svg {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
+  background-color: rgb(249, 205, 72);
   transition: all 0.4s ease-in-out;
   z-index: 3;
 }
@@ -1406,4 +1414,84 @@ div.omrs-input-group {
 
 .omrs-input-filled > input {
 	background: var(--omrs-color-bg-low-contrast);
+}
+
+.content-slide{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation-slide{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar-slide{
+  height: 17px;
+  width: 70px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.bar-slide:hover{
+  background: white;
+}
+
+.slides{
+  display: flex;
+  width: 700%;
+  height: 100%;
+}
+
+.slide{
+  width: 14.28571428571429%;
+  transition: .6s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.slides input{
+  display: none;
+}
+
+#slide1:checked ~ .s1{
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+  margin-left: -14.28571428571429%;
+}
+
+#slide3:checked ~ .s1{
+  margin-left: -28.57142857142857%;
+}
+
+#slide4:checked ~ .s1{
+  margin-left: -42.85714285714286%;
+}
+
+#slide5:checked ~ .s1{
+  margin-left: -57.14285714285714%;
+}
+
+#slide6:checked ~ .s1{
+  margin-left: -71.42857142857143%;
+}
+
+#slide7:checked ~ .s1{
+  margin-left: -85.71428571428571%;
 }

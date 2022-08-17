@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(72deg, #a00058 0%, #01a863 100%);
+        }
+
+        .content-slide{
+            height: 80%;
+            width: 60%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .navigation-slide{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+        }
+
+        .bar-slide{
+            height: 17px;
+            width: 70px;
+            border: 2px solid white;
+            margin: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        .bar-slide:hover{
+            background: white;
+        }
+
+        .slides{
+            display: flex;
+            width: 700%;
+            height: 100%;
+        }
+
+        .slide{
+            width: 14.28571428571429%;
+            transition: .6s;
+        }
+
+        .slide img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .slides input{
+            display: none;
+        }
+
+        #slide1:checked ~ .s1{
+            margin-left: 0;
+        }
+
+        #slide2:checked ~ .s1{
+            margin-left: -14.28571428571429%;
+        }
+
+        #slide3:checked ~ .s1{
+            margin-left: -28.57142857142857%;
+        }
+
+        #slide4:checked ~ .s1{
+            margin-left: -42.85714285714286%;
+        }
+
+        #slide5:checked ~ .s1{
+            margin-left: -57.14285714285714%;
+        }
+
+        #slide6:checked ~ .s1{
+            margin-left: -71.42857142857143%;
+        }
+
+        #slide7:checked ~ .s1{
+            margin-left: -85.71428571428571%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-slide">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            <input type="radio" name="slide" id="slide6">
+            <input type="radio" name="slide" id="slide7">
+
+            <div class="slide s1"><img src="imgs/coletivo.jpg" alt=""></div>
+            <div class="slide"><img src="imgs/emergencias.jpg" alt=""></div>
+            <div class="slide"><img src="imgs/escolar.jpg" alt=""></div>
+            <div class="slide"><img src="imgs/indivisivel.jpg" alt=""></div>
+            <div class="slide"><img src="imgs/mopp.jpg" alt=""></div>
+            <div class="slide"><img src="imgs/rt.jpg" alt=""></div>
+            <div class="slide"><img src="imgs/tac.jpg" alt=""></div>
+        </div>
+        
+        <div class="navigation-slide">
+            <label class="bar-slide" for="slide1"></label>
+            <label class="bar-slide" for="slide2"></label>
+            <label class="bar-slide" for="slide3"></label>
+            <label class="bar-slide" for="slide4"></label>
+            <label class="bar-slide" for="slide5"></label>
+            <label class="bar-slide" for="slide6"></label>
+            <label class="bar-slide" for="slide7"></label>
+        </div>
+    </div>
+</body>
+</html>
