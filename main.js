@@ -50,6 +50,41 @@ function mudarContentSobre(){
   document.getElementById('footer').style.backgroundColor = '#2e3033';
   document.getElementById('footer').style.color = 'rgba(255, 255, 255, .9)';
   document.getElementById('nav').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('color-').style.background= 'linear-gradient(360deg, rgb(249, 205, 72), #2e3033)';
+  document.getElementById('header').style.backgroundColor = '#2e3033';
+  document.getElementById('menu-color1').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('menu-color2').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('menu-color3').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('menu-color4').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top1').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top2').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top3').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top4').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top5').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top6').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top7').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content1').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content2').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content3').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content4').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content5').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content6').style.backgroundColor = '#2e3033';
+  document.getElementById('button-content7').style.backgroundColor = '#2e3033';
+  document.getElementById('container-button-top1').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top2').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top3').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top4').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top5').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top6').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('container-button-top7').style.color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content1').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content2').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content3').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content4').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content5').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content6').color = 'rgba(255, 255, 255, .9)';
+  document.getElementById('button-content7').color = 'rgba(255, 255, 255, .9)';
+
   
 }
 
@@ -63,6 +98,40 @@ function mudarContentContato(){
   document.getElementById('footer').style.backgroundColor = 'rgb(249, 205, 72)';
   document.getElementById('footer').style.color = '#2e3033';
   document.getElementById('nav').style.backgroundColor = '#2e3033';
+  document.getElementById('color-').style.background= 'linear-gradient(360deg, #2e3033, rgb(249, 205, 72))';
+  document.getElementById('header').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('menu-color1').style.color = '#2e3033';
+  document.getElementById('menu-color2').style.color = '#2e3033';
+  document.getElementById('menu-color3').style.color = '#2e3033';
+  document.getElementById('menu-color4').style.color = '#2e3033';
+  document.getElementById('container-button-top1').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top2').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top3').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top4').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top5').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top6').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top7').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content1').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content2').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content3').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content4').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content5').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content6').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('button-content7').style.backgroundColor = 'rgb(249, 205, 72)';
+  document.getElementById('container-button-top1').style.color = '#2e3033';
+  document.getElementById('container-button-top2').style.color = '#2e3033';
+  document.getElementById('container-button-top3').style.color = '#2e3033';
+  document.getElementById('container-button-top4').style.color = '#2e3033';
+  document.getElementById('container-button-top5').style.color = '#2e3033';
+  document.getElementById('container-button-top6').style.color = '#2e3033';
+  document.getElementById('container-button-top7').style.color = '#2e3033';
+  document.getElementById('button-content1').style.color = '#2e3033';
+  document.getElementById('button-content2').style.color = '#2e3033';
+  document.getElementById('button-content3').style.color = '#2e3033';
+  document.getElementById('button-content4').style.color = '#2e3033';
+  document.getElementById('button-content5').style.color = '#2e3033';
+  document.getElementById('button-content6').style.color = '#2e3033';
+  document.getElementById('button-content7').style.color = '#2e3033';
 }
 
 

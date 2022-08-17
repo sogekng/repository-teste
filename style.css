@@ -101,17 +101,6 @@ nav{
   transition: 0.4s ease-out;
 }
 
-#color-header{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  background-color: transparent;
-}
-
 #content-header{
   width: 100%;
   height: 100%;
@@ -151,8 +140,14 @@ nav{
   align-items: center;
 }
 
-.menu ul li a {
+#menu-color1,
+#menu-color2,
+#menu-color3,
+#menu-color4{
   color: rgba(255, 255, 255, .9);
+}
+
+.menu ul li a {
   text-decoration: none;
   transition: all .3s ease-in-out;
   height: 100%;
@@ -181,7 +176,7 @@ display: block;
 }
 
 .menu ul li a:focus {
-  color: white;
+  color: rgba(255, 255, 255, .9);
 }
 
 .menu ul li a:not(:only-child)::after {
@@ -195,7 +190,7 @@ display: block;
 
 .menu ul li ul li a {
   background-color: #2e3033;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .9);
 }
 
 .menu ul li ul li a:hover,
@@ -247,7 +242,15 @@ display: block;
   background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
 }
 
-#button-content{
+#button-content1,
+#button-content2,
+#button-content3,
+#button-content4,
+#button-content5,
+#button-content6,
+#button-content7{
+  background-color: #2e3033;
+  color: rgba(255, 255, 255, .9);
   bottom: 15%;
   right: auto;
   width: 200px;
@@ -288,11 +291,11 @@ display: block;
   display: none;
   z-index: 1;
 }
-.color-{
+#color-{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.233)70%, rgb(0, 0, 0)100%);
+  background: linear-gradient(360deg, rgb(249, 205, 72), #2e3033);
 }
 
 #container-button1,
@@ -312,11 +315,17 @@ display: block;
   transition: all 0.3s ease-in-out;
 }
 
-.container-button-top{
-  color: #121212;
+#container-button-top1,
+#container-button-top2,
+#container-button-top3,
+#container-button-top4,
+#container-button-top5,
+#container-button-top6,
+#container-button-top7{
+  color: rgba(255, 255, 255, .9);
   height: 10%;
   width: 100%;
-  background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214, 161, 1));
+  background-color: #2e3033;
 }
 
 #container-button-top-text{
@@ -630,7 +639,7 @@ svg {
   justify-content: center;
   flex-direction: row;
   margin: 0 10vh;
-  color: rgba(255, 255, 255, .9);
+  color: #2e3033;
   transition: all 0.4s ease-in-out;
 }
 
@@ -944,7 +953,13 @@ body::-webkit-scrollbar-track {
 
   }
 
-  #button-content{
+  #button-content1,
+  #button-content2,
+  #button-content3,
+  #button-content4,
+  #button-content5,
+  #button-content6,
+  #button-content7{
     bottom: 25%;
     right: auto;
     width: 130px;
@@ -1246,11 +1261,27 @@ body::-webkit-scrollbar-track {
     height: 2rem;
     padding: 2vh;
   }
+
+  #bar-slide {
+    height: 7px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  #content-slide {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 480px) { 
   .omrs-input-group {
     font-size: 16px;
+  }
+  .content-slide {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -1418,11 +1449,12 @@ div.omrs-input-group {
 
 .content-slide{
   height: 100%;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 20px;
   transform: translate(-50%, -50%);
 }
 
