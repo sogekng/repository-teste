@@ -84,8 +84,6 @@ function mudarContentSobre(){
   document.getElementById('button-content5').style.color = 'rgba(255, 255, 255, .9)';
   document.getElementById('button-content6').style.color = 'rgba(255, 255, 255, .9)';
   document.getElementById('button-content7').style.color = 'rgba(255, 255, 255, .9)';
-
-  
 }
 
 function mudarContentContato(){
