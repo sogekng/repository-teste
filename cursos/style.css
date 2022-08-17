@@ -396,7 +396,7 @@ background: linear-gradient(90deg, rgb(214, 161, 1), rgb(249, 205, 72), rgb(214,
     align-items: center;
     width: 70%;
     height: 70%;
-    padding: 100px 20px;
+    padding: 80px 20px;
     border: 3px solid #2e3033;
 }
 
@@ -756,8 +756,8 @@ background: transparent;        /* color of the tracking area */
     color: #2e3033;
     }
 
-    .content-text-p {
-        padding: 100px 20px;
+    #content-text-p {
+        padding: 150px 20px;
     }
 
     .top-content-meio p{
@@ -834,13 +834,7 @@ background: transparent;        /* color of the tracking area */
     .top-content-meio p{
         display: none;
     }
-  
 
-    .content-text-p {
-        width: 70%;
-        height: 85%;
-        padding: 100px 20px;
-    }
   
     #form div input {
       height: 40px
