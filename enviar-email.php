@@ -32,7 +32,7 @@ try{
 
     $mail->isHTML(true);
     $mail->Subject = 'Cursos';
-    $mail->Body    = 
+    $mail->Body = 
         '<table width="100%" height="100%" cellspacing="20" cellpadding="0" border="0" bgcolor="#eaeaeb" style="background-color:#eaeaeb">
             <tbody><tr>
                 <td align="center" valign="middle">
@@ -70,17 +70,13 @@ try{
         </tbody></table>
         </body>';
 
-    if($nome == '' || $email == '' || $telefone == '' || $curso == ''){
-        echo '<script>window.location.replace("index.html");</script>';
-        echo '<script>alert("Campos vazios!");</script>';
-    } else {
-        if($mail->send()){
-            echo '<script>window.location.replace("index.html");</script>';
-            echo '<script>alert("Email enviado com sucesso!");</script>';
-        }else{ 
-            echo '<script>window.location.replace("index.html");</script>';
-            echo '<script>alert("Erro ao enviar email!");</script>';
-        }
+    $mail->send();
+    header('Location: index.html');
+    
+    if($mail->send() == true){
+        echo '<script>alert("Email enviado com sucesso!");</script>';
+    }else{ 
+        echo '<script>alert("Erro ao enviar email!");</script>';
     }
     
 }catch(Exception $e){ 
