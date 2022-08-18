@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
         body{
@@ -15,8 +16,8 @@
         }
 
         .content-slide{
-            height: 80%;
-            width: 60%;
+            height: 40%;
+            width: 30%;
             border-radius: 20px;
             overflow: hidden;
             position: absolute;
@@ -34,11 +35,11 @@
         }
 
         .bar-slide{
-            height: 17px;
-            width: 70px;
+            height: 15px;
+            width: 15px;
             border: 2px solid white;
             margin: 6px;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
             transition: .6s;
         }
@@ -56,6 +57,15 @@
         .slide{
             width: 14.28571428571429%;
             transition: .6s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide p{
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
         }
 
         .slide img{
@@ -103,29 +113,19 @@
             </script>
             <input type="radio" name="slide" id="slide1">
             <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-            <input type="radio" name="slide" id="slide6">
-            <input type="radio" name="slide" id="slide7">
 
-            <div class="slide s1"><img src="imgs/coletivo.jpg" alt=""></div>
-            <div class="slide"><img src="imgs/emergencias.jpg" alt=""></div>
-            <div class="slide"><img src="imgs/escolar.jpg" alt=""></div>
-            <div class="slide"><img src="imgs/indivisivel.jpg" alt=""></div>
-            <div class="slide"><img src="imgs/mopp.jpg" alt=""></div>
-            <div class="slide"><img src="imgs/rt.jpg" alt=""></div>
-            <div class="slide"><img src="imgs/tac.jpg" alt=""></div>
+
+            <div class="slide s1">
+                <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm('content-form')">Assinar</button>
+            </div>
+            <div class="slide">
+                <strong><p>Curso coletivo: prepara o condutor que queira ingressar na área, transportar veículo de grande porte de passageiros, oferecendo maior segurança para os passageiros, para o próprio e a todos os envolvidos.</p></strong>
+            </div>
         </div>
         
         <div class="navigation-slide">
             <label class="bar-slide" for="slide1"></label>
             <label class="bar-slide" for="slide2"></label>
-            <label class="bar-slide" for="slide3"></label>
-            <label class="bar-slide" for="slide4"></label>
-            <label class="bar-slide" for="slide5"></label>
-            <label class="bar-slide" for="slide6"></label>
-            <label class="bar-slide" for="slide7"></label>
         </div>
     </div>
 </body>

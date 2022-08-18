@@ -29,7 +29,7 @@
     </div>
 <nav id="nav">
     <div id="header">
-        <div class="header-logo">
+        <div class="header-logo" id="header-logo">
             <a href="index.html">
                 <img src="imgs/LOGO.png" alt="">
             </a>
@@ -37,9 +37,9 @@
         <div id="content-header">
             <div class="menu" id="menu">
                 <ul>
-                    <li><a href="#home" id="menu-color1">Home</a></li>
+                    <li><a href="#home" id="menu-color1" class="menu-color1">Home</a></li>
                     <li>
-                        <a id="menu-color2">Cursos</a>
+                        <a id="menu-color2" class="menu-color2">Cursos</a>
                         <ul class="dropdown">
                             <li>
                                 <a>Detran</a>
@@ -60,13 +60,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a onclick="mudarContentSobre()" href="#sobre" id="menu-color3">Sobre</a></li>
-                    <li><a onclick="mudarContentContato()" href="#contato" id="menu-color4">Contato</a></li>
+                    <li><a onclick="mudarContentSobre()" href="#sobre" id="menu-color3" class="menu-color3">Sobre</a></li>
+                    <li><a onclick="mudarContentContato()" href="#contato" id="menu-color4" class="menu-color3">Contato</a></li>
                 </ul>
             </div>
         </div>
     </div> 
-    <div id="container">
+    <div id="container" class="container">
         <div class="container-container">
             <div id="color-">
             </div>
@@ -93,65 +93,65 @@
         
                     <div class="slide s1" onmouseover="on()" onmouseout="off()">
                         <img src="imgs/coletivo.jpg" alt="">
-                        <div id="container-button1" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top1">
-                                <strong><p id="container-button-top-text">TRANSPORTE COLETIVO</p></strong>
+                        <div id="container-button1" class="container-button1" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top1" class="container-button-top1">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">TRANSPORTE COLETIVO</p></strong>
                             </div>
-                            <button id="button-content1" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(1)">Ver mais</button>
+                            <button id="button-content1" class="button-content1" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(1)">Ver mais</button>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="imgs/emergencias.jpg" alt="">
-                        <div id="container-button2" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top2">
-                                <strong><p id="container-button-top-text">TRANSPORTE EMERGENCIAL</p></strong>
+                        <div id="container-button2" class="container-button2" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top2" class="container-button-top2">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">TRANSPORTE EMERGENCIAL</p></strong>
                             </div>
-                            <button id="button-content2" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(2)">Ver mais</button>
+                            <button id="button-content2" class="button-content2" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(2)">Ver mais</button>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="imgs/escolar.jpg" alt="">
-                        <div id="container-button3" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top3">
-                                <strong><p id="container-button-top-text">TRANSPORTE ESCOLAR</p></strong>
+                        <div id="container-button3" class="container-button3" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top3" class="container-button-top3">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">TRANSPORTE ESCOLAR</p></strong>
                             </div>
-                            <button id="button-content3" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(3)">Ver mais</button>
+                            <button id="button-content3" class="button-content3" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(3)">Ver mais</button>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="imgs/indivisivel.jpg" alt="">
-                        <div id="container-button4" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top4">
-                                <strong><p id="container-button-top-text">TRANSPORTE INDIVISIVEL</p></strong>
+                        <div id="container-button4" class="container-button4" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top4" class="container-button-top4">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">TRANSPORTE INDIVISIVEL</p></strong>
                             </div>
-                            <button id="button-content4" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(4)">Ver mais</button>
+                            <button id="button-content4" class="button-content4" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(4)">Ver mais</button>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="imgs/mopp.jpg" alt="">
-                        <div id="container-button5" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top5">
-                                <strong><p id="container-button-top-text">TRANSPORTE CARGAS PERIGOSAS - MOPP</p></strong>
+                        <div id="container-button5" class="container-button5" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top5" class="container-button-top5">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">TRANSPORTE CARGAS PERIGOSAS - MOPP</p></strong>
                             </div>
-                            <button id="button-content5" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(5)">Ver mais</button>
+                            <button id="button-content5" class="button-content5" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(5)">Ver mais</button>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="imgs/rt.jpg" alt="">
-                        <div id="container-button6" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top6">
-                                <strong><p id="container-button-top-text">RESPONSAVEL TECNICO - RT</p></strong>
+                        <div id="container-button6" class="container-button6" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top6" class="container-button-top6">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">RESPONSAVEL TECNICO - RT</p></strong>
                             </div>
-                            <button id="button-content6" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(6)">Ver mais</button>
+                            <button id="button-content6" class="button-content6" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(6)">Ver mais</button>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="imgs/tac.jpg" alt="">
-                        <div id="container-button7" onmouseover="on()" onmouseout="off()">
-                            <div id="container-button-top7">
-                                <strong><p id="container-button-top-text">TRANSPORTE AUTONOMO DE CARGAS - TAC</p></strong>
+                        <div id="container-button7" class="container-button7" onmouseover="on()" onmouseout="off()">
+                            <div id="container-button-top7" class="container-button-top7">
+                                <strong><p id="container-button-top-text" class="container-button-top-text">TRANSPORTE AUTONOMO DE CARGAS - TAC</p></strong>
                             </div>
-                            <button id="button-content7" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(7)">Ver mais</button>
+                            <button id="button-content7" class="button-content7" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="font-family:Helvetica,Arial,sans-serif;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size: 1rem;border-radius:25px;font-weight:bold;cursor:pointer;text-align:center;text-decoration:none;position:absolute;" onclick="sobre(7)">Ver mais</button>
                         </div>
                     </div>
                 </div>
@@ -182,120 +182,23 @@
             </div>-->    
         </div>
     </div>
-    <div id="content">
+    <div class="content" id="content">
         <div class="content-content-meio">
             <div id="content-b">
-                <div id="content-1" onclick="mudarContentSobre()"><h1>Quem somos nós</h1><span class="material-symbols-outlined">groups</span></div>
-                <div id="content-2" onclick="mudarContentContato()"><span class="material-symbols-outlined">call</span><h1>Tire suas duvidas</h1></div>
+                <div id="content-1" class="content-1" onclick="mudarContentSobre()"><h1>Quem somos nós</h1><span class="material-symbols-outlined">groups</span></div>
+                <div id="content-2" class="content-2" onclick="mudarContentContato()"><span class="material-symbols-outlined">call</span><h1>Tire suas duvidas</h1></div>
             </div>
-            <div id="content-card">
-                <div class="card-title" style="justify-content: center;">
-                    <h1 style="margin: 1vh;">Cursos</h1><span class="material-symbols-outlined">auto_stories</span>
-                </div>
-                <div class="card-content">
-                    <div class="content1">
-                        <div class="card">
-                            <img src="imgs/coletivo.jpg" alt="car">
-                            <div class="content">
-                                <div class="color-card"></div>
-                                <h3 class="title">Transporte Coletivo</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar"></div>
-                                </div>
-                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(1)" >Ver mais</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/emergencias.jpg" alt="car">
-                            <div class="content">
-                                <div class="color-card"></div>
-                                <h3 class="title">Transporte Emergencial</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar"></div>
-                                </div>
-                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(2)">Ver mais</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/escolar.jpg" alt="car">
-                            <div class="content">
-                                <div class="color-card"></div>
-                                <h3 class="title">Tranporte Escolar</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar"></div>
-                                </div>
-                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(3)">Ver mais</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content1">
-                        <div class="card">
-                            <img src="imgs/indivisivel.jpg" alt="car">
-                            <div class="content">
-                                <div class="color-card"></div>
-                                <h3 class="title">Indivisível</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar"></div>
-                                </div>
-                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(4)">Ver mais</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/mopp.jpg" alt="car">
-                            <div class="content">
-                                <div class="color-card"></div>
-                                <h3 class="title">Transporte MOPP</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar"></div>
-                                </div>
-                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(5)">Ver mais</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/rt.jpg" alt="car">
-                            <div class="content">
-                                <div class="color-card"></div>
-                                <h3 class="title">Resp. Técnico – RT</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar"></div>
-                                </div>
-                                <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(6)">Ver mais</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content1">
-                    <div class="card">
-                        <img src="imgs/tac.jpg" alt="car">
-                        <div class="content">
-                            <div class="color-card"></div>
-                            <h3 class="title">Transp. Autônomo de Cargas - TAC</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
-                            </div>
-                            <button id="button_card" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#f9cd48;color:#100e17;font-size: 0.6rem;border-radius:25px;font-weight:bold;height: 30px;cursor:pointer;text-align:center;margin:auto auto 2vh auto;text-decoration:none;" onclick="sobre(7)">Ver mais</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-sobre" id="sobre">
-                <div id="sobre-content">
-                    <div id="sobre-content1">
-                        <div class="sobre-img">
+            <div class="content-sobre" id="content-sobre">
+                <div class="sobre-content" id="sobre-content">
+                    <div class="sobre-content1" id="sobre-content1">
+                        <div class="sobre-img" id="sobre-img">
                             <img src="imgs/LOGO.png" alt="">
                         </div>
-                        <div class="sobre-text">
+                        <div class="sobre-text" id="sobre-text">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolore eos nam pariatur consequatur omnis? Alias, dolore aut fugiat quas iste maxime. Pariatur exercitationem quod quidem qui nisi hic eos?    </p>
                         </div>
                     </div>
-                    <div id="sobre-content2">
+                    <div class="sobre-content2" id="sobre-content2">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a assumenda soluta aliquam expedita error magnam, quas, asperiores, eum quam dolor impedit ipsam eius. Provident soluta asperiores perferendis molestiae illum.
                         </p>
@@ -308,25 +211,24 @@
                     </div>
                 </div>
             </div>
-            <div class="content-contato" id="contato">
-                <div id="contato-content">
-                    <div class="contato-text">
-                        <img id="contato-img" src="imgs/logo-suporte.png" alt="">
+            <div class="content-contato" id="content-contato">
+                <div class="contato-content" id="contato-content">
+                    <div class="contato-text" id="contato-text">
+                        <img class="contato-img" id="contato-img" src="imgs/logo-suporte.png" alt="">
                         <p>
                             Clique no link abaixo para entrar em contato conosco
                         </p>
-                        <a id="icone" href="http://api.whatsapp.com/send?1=pt_BR&phone=5511956182296&text=Olá gostaria de tirar minhas dúvidas" target="blank">
-                            <img id="icone-img" href="" src="imgs/whatsapp.png" alt="icone">
+                        <a class="icone" id="icone" href="http://api.whatsapp.com/send?1=pt_BR&phone=5511956182296&text=Olá gostaria de tirar minhas dúvidas" target="blank">
+                            <img class="icone-img" id="icone-img" href="" src="imgs/whatsapp.png" alt="icone">
                             <p>Entre em contato pelo o whatsapp</p>
                         </a>
-                        <a id="icone2" onclick="openForm('contato-form')">
-                            <!--<img id="icone-img" src="imgs/whatsapp.png" alt="icone">-->
+                        <a class="icone2" id="icone2" onclick="openForm('contato-form')">
                             <p>Preencha o formulário</p>
                         </a>
                     </div>
-                    <form action="enviar-email-1.php" id="contato-form" method="POST">
+                    <form action="enviar-email-1.php" id="contato-form" class="contato-form" method="POST">
                         <h1>Mande sua Dúvida</h1>
-                        <p id="close" onclick="closeForm('contato-form')">X</p>
+                        <p class="close" id="close" onclick="closeForm('contato-form')">X</p>
                         <div class="omrs-input-group">
                             <label class="omrs-input-underlined">
                                 <input name="nome" required>
@@ -393,6 +295,6 @@
         }
         });
     </script>
-    <a href="#home" id="button-home"><span class="material-symbols-outlined">arrow_circle_up</span></a>  
+    <a href="#home" id="button-home" class="button-home"><span class="material-symbols-outlined">arrow_circle_up</span></a>  
 </nav>
 </body>
