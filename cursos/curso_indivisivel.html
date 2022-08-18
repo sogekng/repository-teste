@@ -74,9 +74,32 @@
             <div class="box-1"><p>7 Módulos</p></div>
             <div class="box-2"><p>DETRAN</p></div>
           </div>
-          <div class="top-content-meio">
-            <strong><p>Curso indivisível: Capacita os condutores que queiram trabalhar com carga indivisível ou seja; que não se divide ou perigosa, transportando-a com segurança e atenção podendo agir em emergências.</p></strong>
-            <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm('content-form')">Assinar</button>
+          <div class="content-slide">
+            <div class="slides">
+                <script>
+                  var count = 1;
+
+                  setInterval(function(){
+                      count++;
+                      if(count > 2){
+                          count = 1;
+                      }
+                      document.querySelector('#slide' + count).checked = true;
+                  }, 2000);
+                </script>
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <div class="slide s1">
+                    <button id="button_assi" data-tf-iframe-props="title=teste" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width: 100%;width: 100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#2e3033;color:white;font-size: 0.8rem;border-radius:25px;font-weight:bold;height: 40px;cursor:pointer;text-align:center;margin:2vh;text-decoration:none;" onclick="openForm('content-form')">Assinar</button>
+                </div>
+                <div class="slide" id="slide">
+                  <strong><p>Curso indivisível: Capacita os condutores que queiram trabalhar com carga indivisível ou seja; que não se divide ou perigosa, transportando-a com segurança e atenção podendo agir em emergências.</p></strong>
+                </div>
+            </div>
+            <div class="navigation-slide">
+                <label class="bar-slide" for="slide1"></label>
+                <label class="bar-slide" for="slide2"></label>
+            </div>
           </div>
         </div>
       </div>
