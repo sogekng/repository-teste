@@ -711,6 +711,11 @@ background: transparent;        /* color of the tracking area */
         width: 10px;
     }
 
+    #content-form {
+        height: 40%;
+        width: 75%;
+    }
+
     footer p {
         font-size: 13px;
         margin: 0;
