@@ -896,8 +896,8 @@ body::-webkit-scrollbar-track {
   }
 
   #bar-slide {
-    height: 10px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     margin: 5px;
   }
 
@@ -1177,11 +1177,11 @@ div.omrs-input-group {
 }
 
 .bar-slide{
-  height: 10px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   border: 2px solid #2e3033;
   margin: 6px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: .6s;
 }
